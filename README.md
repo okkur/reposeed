@@ -1,2 +1,2 @@
-# base
-Open source template base
+# Base resources
+Open source template repository for new projects.
