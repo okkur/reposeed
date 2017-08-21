@@ -39,18 +39,7 @@ respond in the $CHAT.
 
 ## User support/questions
 
-Non technical or user centric support might be available from the community members on the mailing list, StackOverflow or within our $CHAT.
-
-Our issue tracker is available for technical discussions and contributions surrounding the $PROJECT, not for user support.
-
-If you're unsure where to post, post to the [mailing list][$LINK] or
-[Stack Overflow][LINK] first. There are a lot of helpful volunteers
-there who may be able to help you quickly. If your particular issue turns out
-to be a bug, it will find its way from there.
-
-If it happens that you know the solution to an existing bug, please first
-open the issue in order to keep track of it and then open the relevant pull/merge
-request that potentially fixes it.
+Non technical or user centric support might be available from the community members on the mailing list, StackOverflow or within our $CHAT for more information read our [support guidelines](SUPPORT.md)
 
 ## Closing policy for issues and pull/merge requests
 
