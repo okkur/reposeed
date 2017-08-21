@@ -16,6 +16,7 @@ Thank you for your interest in contributing to {{ project }}. This guide helps m
 ### First contribution
 
 If you are starting out contributing to {{ project }}, there might be smaller scoped issues available under the "starter issues" label.
+[Current starter issues]({{ starter-issues-link }})
 
 ### Report bug
 
@@ -32,13 +33,16 @@ It would be helpful to answer some questions:
 
 ## Helping others
 
-Please help other {{ project }} users when you can.
+Please help other users whenever you can.
 
-Sign up for the mailing list, answer {{ project }} questions on StackOverflow or respond in the {{ chat-link }}.
+There are various places for helping others:
+{{ with user-mailinglist-link }}* [user mailing list]({{ . }}){{ end }}
+{{ with stackoverflow-link }}* [StackOverflow]({{ . }}){{ end }}
+{{ with chat-link }}* [Chat]({{ . }}){{ end }}
 
 ## User support/questions
 
-Non technical or user centric support might be available from the community members on the mailing list, StackOverflow or within our $CHAT for more information read our [support guidelines](/SUPPORT.md)
+Non technical or user centric support might be available from the community for more information read our [support guidelines](/SUPPORT.md)
 
 ## Closing policy for issues and pull/merge requests
 

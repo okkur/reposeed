@@ -1,0 +1,24 @@
+# general
+project: "Project123"
+project-description: "Simplest project description you could imagine"
+
+# support
+chat-link: "chat.example.com"
+stackoverflow-link: "stackoverflow.example.com"
+user-mailinglist-link: "list.example.com"
+
+# contributing
+issue-template-link: "/.github/ISSUE_TEMPLATE.md"
+starter-issues-link: "/.gitlab/issue_templates/BUG.md"
+
+# emails
+commercial-support-email: "payed-support@example.com"
+security-email: "security@example.com"
+coc-email: "coc@example.com"
+
+# copyright
+owner: "The Project123 authors"
+year: "2017"
+maintainers:
+- Big Robot (nickname)
+- Little Marmot (nickname)

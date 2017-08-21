@@ -1,2 +1,4 @@
 # List of current owners/maintainers.
-{{ maintainer1 }}
+{{ range maintainers }}
+{{ . }}
+{{ end }}

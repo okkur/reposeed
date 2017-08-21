@@ -16,6 +16,6 @@ file | sha1 hash | md5 hash
 
 ## Changes since v0.0.0
 
-  - More awesomeness
-  - Huge addition for transparency
-  - Milestone for diversity
+  - Feature X
+  - Feature Y
+  - Bugfix for #42

@@ -1,4 +1,4 @@
-# Base resources
-Open source template repository for new projects.
+# {{ project }}
+{{ project-description }}
 
-Copyright {{ year }} by {{ owner }}
+Copyright {{ year }} {{ if owner }}{{ owner }}{{else}} The {{ project }} Authors{{ end }}
