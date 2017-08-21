@@ -36,6 +36,7 @@ It would be helpful to answer some questions:
 Please help other users whenever you can.
 
 There are various places for helping others:
+* [User Mailinglist](example.com)
 
 ## User support/questions
 

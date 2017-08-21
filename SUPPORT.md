@@ -1,6 +1,8 @@
 # Support/questions
 
-Non technical or user centric support might be available from the community members on the mailing list, StackOverflow or within our [].
+Non technical or user centric support might be available from community members.
+There are various places where the community helps each other:
+* [User Mailinglist](example.com)
 
 Our issue tracker is available for technical discussions and contributions surrounding the RepoSeed, not for user support.
 
