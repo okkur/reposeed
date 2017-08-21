@@ -1,15 +1,16 @@
 package main
 
 import (
-	"gopkg.in/yaml.v2"
 	"html/template"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
+
+	"gopkg.in/yaml.v2"
 )
 
-type Config struct {
+type config struct {
 	Project struct {
 		Name        string `yaml:"name"`
 		Description string `yaml:"description"`
@@ -51,19 +52,19 @@ type Config struct {
 	} `yaml:"contributionLinks"`
 }
 
-func parseConfig(path string) Config {
-	var config Config
+func parseConfig(path string) config {
+	var conf config
 
 	filename, _ := filepath.Abs(path)
 	file, err := ioutil.ReadFile(filename)
 	if err != nil {
 		panic(err)
 	}
-	err = yaml.Unmarshal(file, &config)
+	err = yaml.Unmarshal(file, &conf)
 	if err != nil {
 		panic(err)
 	}
-	return config
+	return conf
 }
 
 func generateFile(path string, newPath string) {
