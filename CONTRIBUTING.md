@@ -1,9 +1,9 @@
 ## Contributor license agreement
 
 By submitting code as an individual you agree to the
-[individual contributor license agreement](CLA/INDIVIDUAL_CONTRIBUTOR_LICENSE_AGREEMENT.md).
+[individual contributor license agreement](/CLA/INDIVIDUAL_CONTRIBUTOR_LICENSE_AGREEMENT.md).
 By submitting code as an entity you agree to the
-[corporate contributor license agreement](CLA/CORPORATE_CONTRIBUTOR_LICENSE_AGREEMENT.md).
+[corporate contributor license agreement](/CLA/CORPORATE_CONTRIBUTOR_LICENSE_AGREEMENT.md).
 
 _Should always come as first item in contributor guide!_
 
@@ -11,19 +11,19 @@ _Should always come as first item in contributor guide!_
 
 ## Contribute to Project
 
-Thank you for your interest in contributing to $PROJECT. This guide helps make contributing to $PROJECT simple and efficient for everyone.
+Thank you for your interest in contributing to {{ project }}. This guide helps make contributing to {{ project }} simple and efficient for everyone.
 
 ### First contribution
 
-If you are starting out contributing to $PROJECT, there might be smaller scoped issues available under the "starter issues" label.
+If you are starting out contributing to {{ project }}, there might be smaller scoped issues available under the "starter issues" label.
 
 ### Report bug
 
-If you are sure you found a bug and no issue exists yet, please feel free to create an issue following the [issue template]($LINK).
+If you are sure you found a bug and no issue exists yet, please feel free to create an issue following the [issue template]({{ issue-template-link }}).
 
 ### New feature
 
-As your time is precious and not all features might be in the scope of what the $PROJECT wants to achieve, please open up an issue first.
+As your time is precious and not all features might be in the scope of what the {{ project }} wants to achieve, please open up an issue first.
 
 It would be helpful to answer some questions:
   * Why do you need this feature?
@@ -32,14 +32,13 @@ It would be helpful to answer some questions:
 
 ## Helping others
 
-Please help other $PROJECT users when you can.
+Please help other {{ project }} users when you can.
 
-Sign up for the mailing list, answer $PROJECT questions on StackOverflow or
-respond in the $CHAT.
+Sign up for the mailing list, answer {{ project }} questions on StackOverflow or respond in the {{ chat-link }}.
 
 ## User support/questions
 
-Non technical or user centric support might be available from the community members on the mailing list, StackOverflow or within our $CHAT for more information read our [support guidelines](SUPPORT.md)
+Non technical or user centric support might be available from the community members on the mailing list, StackOverflow or within our $CHAT for more information read our [support guidelines](/SUPPORT.md)
 
 ## Closing policy for issues and pull/merge requests
 
@@ -55,15 +54,13 @@ Inactive issues or pull/merge requests may be closed after a specific period. Th
 
 ### Merge request guidelines
 
-Please keep the change in a single pull/merge request **as small as possible**. If you want to
-contribute a large feature think very hard what the minimum viable change is. The smaller a pull/merge request is the more likely it is it will be merged (quickly). Afterwards follow-up requests for enhancements are appreciated.
+Please keep the change in a single pull/merge request **as small as possible**. If you want to contribute a large feature think very hard what the minimum viable change is. The smaller a pull/merge request is the more likely it is it will be merged (quickly). Afterwards follow-up requests for enhancements are appreciated.
 
 ### Contribution acceptance criteria
 
 * The change is as small as possible
 * Include proper tests and make all tests pass
 * Does not break any existing functionality
-* Fixes one specific issue or implements one specific feature (do not combine
-   things, send separate requests if needed)
+* Fixes one specific issue or implements one specific feature (do not combine things, send separate requests if needed)
 * Contains functionality we think other users will benefit from too
 * If the request adds any new libraries, they should have a compatible license.
