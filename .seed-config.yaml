@@ -6,9 +6,12 @@ contributionLinks:
   issueTemplate: "/.github/ISSUE_TEMPLATE.md"
   starterIssues: "https://github.com/okkur/reposeed/labels/starter%20issue"
 
-supportLinks:
+supportPlatforms:
   - service: "User Mailinglist"
     link: "example.com"
+
+supportLinks:
+  documentation: "/docs"
 
 emails:
   commercialSupport: "support@seetheprogress.net"
