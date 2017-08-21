@@ -1,7 +1,6 @@
-# general
 project:
-  name: "Project123"
-  description: "Simplest project description you could imagine"
+  name: "Project123" # required
+  description: "Simplest project description you could imagine" # required
 
 supportPlatforms:
   - service: "Chat"
@@ -22,12 +21,12 @@ contributionLinks:
 
 emails:
   commercialSupport: "payed-support@example.com"
-  security: "security@example.com"
-  coc: "coc@example.com"
+  security: "security@example.com" # required
+  coc: "coc@example.com" # required
 
 copyright:
-  owner: "The Project123 authors"
-  year: "2017"
+  owner: "The Project123 authors" # falls back to project.name
+  year: "2017" # required
 
 maintainers:
   - name: "Big Robot"
@@ -36,5 +35,10 @@ maintainers:
     nick: "nickname"
 
 repo:
-  link: "https://github.com/okkur/reposeed"
-  type: "Github"
+  link: "https://github.com/okkur/reposeed" # required
+  type: "Github" # required
+
+issueTemplate:
+  questions:
+  - question: "OS"
+  - question: "CLI version"

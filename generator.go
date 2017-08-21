@@ -14,36 +14,41 @@ type Config struct {
 		Name        string `yaml:"name"`
 		Description string `yaml:"description"`
 	} `yaml:"project"`
-	SupportPlatforms []struct {
-		Service string `yaml:"service"`
-		Link    string `yaml:"link"`
-	} `yaml:"supportPlatforms"`
-	SupportLinks struct {
-		Documentation   string `yaml:"documentation,omitempty"`
-		Examples        string `yaml:"examples,omitempty"`
-		Troubleshooting string `yaml:"troubleshooting,omitempty"`
-	} `yaml:"supportLinks,omitempty"`
-	ContributionLinks struct {
-		IssueTemplate string `yaml:"issueTemplate,omitempty"`
-		StarterIssues string `yaml:"starterIssues,omitempty"`
-	} `yaml:"contributionLinks"`
-	Emails struct {
-		CommercialSupport string `yaml:"commercialSupport,omitempty"`
-		Security          string `yaml:"security"`
-		Coc               string `yaml:"coc"`
-	} `yaml:"emails"`
+	Repo struct {
+		Type string `yaml:"type"`
+		Link string `yaml:"link"`
+	} `yaml:"repo"`
 	Copyright struct {
 		Owner string `yaml:"owner"`
 		Year  string `yaml:"year"`
 	} `yaml:"copyright"`
 	Maintainers []struct {
 		Name string `yaml:"name"`
-		Nick string `yaml:"nick"`
-	} `yaml:"maintainers"`
-	Repo struct {
-		Type string `yaml:"type"`
-		Link string `yaml:"link"`
-	} `yaml:"repo"`
+		Nick string `yaml:"nick,omitempty"`
+	} `yaml:"maintainers,omitempty"`
+	Emails struct {
+		CommercialSupport string `yaml:"commercialSupport,omitempty"`
+		Security          string `yaml:"security"`
+		Coc               string `yaml:"coc"`
+	} `yaml:"emails"`
+	SupportLinks struct {
+		Documentation   string `yaml:"documentation,omitempty"`
+		Examples        string `yaml:"examples,omitempty"`
+		Troubleshooting string `yaml:"troubleshooting,omitempty"`
+	} `yaml:"supportLinks,omitempty"`
+	SupportPlatforms []struct {
+		Service string `yaml:"service"`
+		Link    string `yaml:"link"`
+	} `yaml:"supportPlatforms,omitempty"`
+	IssueTemplate struct {
+		Questions []struct {
+			Question string `yaml:"question"`
+		} `yaml:"questions"`
+	} `yaml:"issueTemplate"`
+	ContributionLinks struct {
+		IssueTemplate string `yaml:"issueTemplate,omitempty"`
+		StarterIssues string `yaml:"starterIssues,omitempty"`
+	} `yaml:"contributionLinks"`
 }
 
 func parseConfig(path string) Config {
@@ -87,7 +92,6 @@ func main() {
 	bl := make(map[string]bool)
 	bl["seed-config.example.yaml"] = true
 	bl[".gitlab"] = true
-	bl[".github"] = true
 
 	dir := "templates/"
 	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
