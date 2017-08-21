@@ -11,20 +11,20 @@ _Should always come as first item in contributor guide!_
 
 ## Contribute to Project
 
-Thank you for your interest in contributing to {{ project }}. This guide helps make contributing to {{ project }} simple and efficient for everyone.
+Thank you for your interest in contributing to {{ .Project.Name }}. This guide helps make contributing to {{ .Project.Name }} simple and efficient for everyone.
 
 ### First contribution
 
-If you are starting out contributing to {{ project }}, there might be smaller scoped issues available under the "starter issues" label.
-[Current starter issues]({{ starter-issues-link }})
+If you are starting out contributing to {{ .Project.Name }}, there might be smaller scoped issues available under the "starter issues" label.
+[Current starter issues]({{ .ContributionLinks.StarterIssues }})
 
 ### Report bug
 
-If you are sure you found a bug and no issue exists yet, please feel free to create an issue following the [issue template]({{ issue-template-link }}).
+If you are sure you found a bug and no issue exists yet, please feel free to create an issue following the [issue template]({{ .ContributionLinks.IssueTemplate }}).
 
 ### New feature
 
-As your time is precious and not all features might be in the scope of what the {{ project }} wants to achieve, please open up an issue first.
+As your time is precious and not all features might be in the scope of what the {{ .Project.Name }} wants to achieve, please open up an issue first.
 
 It would be helpful to answer some questions:
   * Why do you need this feature?
@@ -36,9 +36,6 @@ It would be helpful to answer some questions:
 Please help other users whenever you can.
 
 There are various places for helping others:
-{{ with user-mailinglist-link }}* [user mailing list]({{ . }}){{ end }}
-{{ with stackoverflow-link }}* [StackOverflow]({{ . }}){{ end }}
-{{ with chat-link }}* [Chat]({{ . }}){{ end }}
 
 ## User support/questions
 

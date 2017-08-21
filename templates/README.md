@@ -1,4 +1,4 @@
-# {{ project }}
-{{ project-description }}
+# {{ .Project.Name }}
+{{ .Project.Description }}
 
-Copyright {{ year }} {{ if owner }}{{ owner }}{{else}} The {{ project }} Authors{{ end }}
+Copyright {{ .Copyright.Year }} {{ with .Copyright.Owner }}{{ . }}{{ else }} The {{ .Project.Name }} Authors{{ end }}
