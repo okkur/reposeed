@@ -76,7 +76,7 @@ func generateFile(config config, path string, newPath string) {
 	}
 
 	if _, err := os.Stat(newPath); os.IsNotExist(err) {
-	    	os.MkdirAll(filepath.Dir(newPath), os.ModePerm)
+		os.MkdirAll(filepath.Dir(newPath), os.ModePerm)
 	}
 
 	file, err := os.Create(newPath)
@@ -99,8 +99,7 @@ func main() {
 	flag.StringVar(&conf, "conf", ".seed-config.yaml", "Config file")
 	flag.Parse()
 
-
-        config := parseConfig(conf)
+	config := parseConfig(conf)
 	tempDir, _ = filepath.Abs(tempDir)
 
 	bl := make(map[string]bool)
