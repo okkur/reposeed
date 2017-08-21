@@ -1,17 +1,20 @@
-# general
-project: "RepoSeed"
-project-description: "Repository template for your next open source project"
+project:
+  name: "RepoSeed"
+  description: "Repository template for your next open source project"
 
-# contributing
-issue-template-link: "/.github/ISSUE_TEMPLATE.md"
-starter-issues-link: "https://github.com/okkur/reposeed/labels/starter%20issue"
+contributionLinks:
+  issueTemplate: "/.github/ISSUE_TEMPLATE.md"
+  starterIssues: "https://github.com/okkur/reposeed/labels/starter%20issue"
 
-# emails
-commercial-support-email: "support@seetheprogress.net"
-security-email: "security@seetheprogress.net"
-coc-email: "coc@seetheprogress.net"
+emails:
+  commercialSupport: "support@seetheprogress.net"
+  security: "security@seetheprogress.net"
+  coc: "coc@seetheprogress.net"
 
-# copyright
-year: "2017"
+copyright:
+  owner: "The RepoSeed authors"
+  year: "2017"
+
 maintainers:
-- Michael Grosser (stp-ip)
+  - name: "Michael Grosser"
+    nick: "stp-ip"
