@@ -1,9 +1,9 @@
 ## Contributor license agreement
 
 By submitting code as an individual you agree to the
-[individual contributor license agreement](INDIVIDUAL_CONTRIBUTOR_LICENSE_AGREEMENT.md).
+[individual contributor license agreement](CLA/INDIVIDUAL_CONTRIBUTOR_LICENSE_AGREEMENT.md).
 By submitting code as an entity you agree to the
-[corporate contributor license agreement](CORPORATE_CONTRIBUTOR_LICENSE_AGREEMENT.md).
+[corporate contributor license agreement](CLA/CORPORATE_CONTRIBUTOR_LICENSE_AGREEMENT.md).
 
 _Should always come as first item in contributor guide!_
 
