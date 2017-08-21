@@ -25,3 +25,12 @@ copyright:
 maintainers:
   - name: "Michael Grosser"
     nick: "stp-ip"
+
+repo:
+  link: "https://github.com/okkur/reposeed"
+  type: "Github"
+
+issueTemplate:
+  questions:
+  - question: "OS?"
+  - question: "CLI version?"

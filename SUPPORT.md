@@ -1,6 +1,6 @@
 # Support for using RepoSeed
 
-Welcome to RepoSeed! We use  for tracking bugs and feature requests.
+Welcome to RepoSeed! We use Github for tracking bugs and feature requests.
 This isn't the right place to get support for using RepoSeed, but below we made user centric resources available.
 
 If you're unsure where to post, use one of the [community platforms](#community-support):
