@@ -3,13 +3,18 @@ project:
   name: "Project123"
   description: "Simplest project description you could imagine"
 
-supportLinks:
+supportPlatforms:
   - service: "Chat"
     link: "chat.example.com"
   - service: "User Mailinglist"
     link: "list.example.com"
   - service: "StackOverflow"
     link: "stackoverflow.example.com"
+
+supportLinks:
+  documentation: "/docs"
+  examples: "/examples"
+  troubleshooting: "/docs/troubleshooting.md
 
 contributionLinks:
   issueTemplate: "/.github/ISSUE_TEMPLATE.md"
@@ -29,3 +34,7 @@ maintainers:
     nick: "nickname"
   - name: "Little Marmot"
     nick: "nickname"
+
+repo:
+  link: "https://github.com/okkur/reposeed"
+  type: "Github"

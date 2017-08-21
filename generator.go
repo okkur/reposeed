@@ -14,16 +14,21 @@ type Config struct {
 		Name        string `yaml:"name"`
 		Description string `yaml:"description"`
 	} `yaml:"project"`
-	SupportLinks []struct {
+	SupportPlatforms []struct {
 		Service string `yaml:"service"`
 		Link    string `yaml:"link"`
-	} `yaml:"supportLinks"`
+	} `yaml:"supportPlatforms"`
+	SupportLinks struct {
+		Documentation string `yaml:"documentation,omitempty"`
+		Examples    string `yaml:"examples,omitempty"`
+		Troubleshooting    string `yaml:"troubleshooting,omitempty"`
+	} `yaml:"supportLinks,omitempty"`
 	ContributionLinks struct {
 		IssueTemplate string `yaml:"issueTemplate,omitempty"`
 		StarterIssues string `yaml:"starterIssues,omitempty"`
 	} `yaml:"contributionLinks"`
 	Emails struct {
-		CommercialSupport string `yaml:"commercialSupport"`
+		CommercialSupport string `yaml:"commercialSupport,omitempty"`
 		Security          string `yaml:"security"`
 		Coc               string `yaml:"coc"`
 	} `yaml:"emails"`
@@ -35,6 +40,10 @@ type Config struct {
 		Name string `yaml:"name"`
 		Nick string `yaml:"nick"`
 	} `yaml:"maintainers"`
+	Repo struct {
+		Type string `yaml:"type"`
+		Link string `yaml:"link"`
+	} `yaml:"repo"`
 }
 
 func parseConfig(path string) Config {

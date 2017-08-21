@@ -35,7 +35,7 @@ It would be helpful to answer some questions:
 
 Please help other users whenever you can.
 
-{{ with .SupportLinks }}There are various places for helping others:
+{{ with .SupportPlatforms }}There are various places for helping others:
 {{ range . }}* [{{ .Service }}]({{ .Link }}){{ end }}{{ end }}
 
 ## User support/questions
