@@ -19,9 +19,9 @@ type Config struct {
 		Link    string `yaml:"link"`
 	} `yaml:"supportPlatforms"`
 	SupportLinks struct {
-		Documentation string `yaml:"documentation,omitempty"`
-		Examples    string `yaml:"examples,omitempty"`
-		Troubleshooting    string `yaml:"troubleshooting,omitempty"`
+		Documentation   string `yaml:"documentation,omitempty"`
+		Examples        string `yaml:"examples,omitempty"`
+		Troubleshooting string `yaml:"troubleshooting,omitempty"`
 	} `yaml:"supportLinks,omitempty"`
 	ContributionLinks struct {
 		IssueTemplate string `yaml:"issueTemplate,omitempty"`
@@ -84,9 +84,14 @@ func generateFile(path string, newPath string) {
 	}
 }
 func main() {
+	bl := make(map[string]bool)
+	bl["seed-config.example.yaml"] = true
+	bl[".gitlab"] = true
+	bl[".github"] = true
+
 	dir := "templates/"
 	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
-		if info.Name() == "seed-config.example.yaml" {
+		if bl[info.Name()] {
 			return filepath.SkipDir
 		}
 		if !info.IsDir() {
