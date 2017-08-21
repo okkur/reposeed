@@ -1,7 +1,8 @@
 # Support/questions
 
-Non technical or user centric support might be available from the community members on following mediums:
-{{ with .SupportLinks }}{{ range . }}* [{{ .Service }}]({{ .Link }}){{ end }}{{ end }}
+Non technical or user centric support might be available from community members.
+{{ with .SupportLinks }}There are various places where the community helps each other:
+{{ range . }}* [{{ .Service }}]({{ .Link }}){{ end }}{{ end }}
 
 Our issue tracker is available for technical discussions and contributions surrounding the {{ .Project.Name }}, not for user support.
 
