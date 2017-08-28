@@ -2,6 +2,16 @@ project:
   name: "Project123" # required
   description: "Simplest project description you could imagine" # required
 
+vision:
+  type: "personal" # personal is the default.
+  items:
+    - "Only specific categories allowed"
+    - "Bugfixes only"
+    - "For personal projects only"
+  concept: "Project123's core concept to showcase how, why it does what it does."
+  aim: "Project123 should only provide a small core and further additions should be done in helper projects/plugins or some sort."
+
+
 supportPlatforms:
   - service: "Chat"
     link: "chat.example.com"

@@ -16,6 +16,12 @@ type config struct {
 		Name        string `yaml:"name"`
 		Description string `yaml:"description"`
 	} `yaml:"project"`
+	Vision struct {
+		Type        string `yaml:"type"`
+		Items        []string `yaml:"items"`
+		Concept        string `yaml:"concept"`
+		Aim        string `yaml:"aim"`
+	} `yaml:"vision"`
 	Repo struct {
 		Type string `yaml:"type"`
 		Link string `yaml:"link"`
