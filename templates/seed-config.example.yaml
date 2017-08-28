@@ -43,5 +43,5 @@ repo:
 
 issueTemplate:
   questions:
-  - question: "OS"
-  - question: "CLI version"
+  - "OS"
+  - "CLI version"

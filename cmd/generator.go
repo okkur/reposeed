@@ -46,9 +46,7 @@ type config struct {
 		Link    string `yaml:"link"`
 	} `yaml:"supportPlatforms,omitempty"`
 	IssueTemplate struct {
-		Questions []struct {
-			Question string `yaml:"question"`
-		} `yaml:"questions"`
+		Questions []string `yaml:"questions"`
 	} `yaml:"issueTemplate"`
 	ContributionLinks struct {
 		IssueTemplate string `yaml:"issueTemplate,omitempty"`

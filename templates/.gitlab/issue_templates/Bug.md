@@ -15,5 +15,5 @@ If you're looking for help check out [our support guidelines](/SUPPORT.md){{ wit
 
 **Environment**:
 - {{ .Project.Name }} version:  {{ with .IssueTemplate.Questions }}{{ range . }}
-- {{ .Question }}:  {{ end }}{{ end }}
+- {{ . }}:  {{ end }}{{ end }}
 - Others:
