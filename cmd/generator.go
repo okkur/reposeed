@@ -24,6 +24,9 @@ type config struct {
 		Owner string `yaml:"owner"`
 		Year  string `yaml:"year"`
 	} `yaml:"copyright"`
+	Cla struct {
+		CopyrightHolder string `yaml:"copyrightHolder"`
+	} `yaml:"cla"`
 	Maintainers []struct {
 		Name string `yaml:"name"`
 		Nick string `yaml:"nick,omitempty"`

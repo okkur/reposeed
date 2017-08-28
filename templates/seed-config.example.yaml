@@ -28,6 +28,9 @@ copyright:
   owner: "The Project123 authors" # falls back to project.name
   year: "2017" # required
 
+cla:
+  copyrightHolder: "Michael Grosser" # required
+
 maintainers:
   - name: "Big Robot"
     nick: "nickname"
