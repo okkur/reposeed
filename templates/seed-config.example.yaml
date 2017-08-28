@@ -11,7 +11,6 @@ vision:
   concept: "Project123's core concept to showcase how, why it does what it does."
   aim: "Project123 should only provide a small core and further additions should be done in helper projects/plugins or some sort."
 
-
 supportPlatforms:
   - service: "Chat"
     link: "chat.example.com"
