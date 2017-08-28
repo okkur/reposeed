@@ -1,4 +1,4 @@
-# Support for using RepoSeed
+# Support using RepoSeed
 
 Welcome to RepoSeed! We use Github for tracking bugs and feature requests.
 This isn't the right place to get support for using RepoSeed, but below we made user centric resources available.

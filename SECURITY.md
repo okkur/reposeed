@@ -1,4 +1,4 @@
-# Security vulnerability disclosure
+# Security Vulnerability Disclosure
 
 Please report any suspected security vulnerabilities privately to
 security@seetheprogress.net.

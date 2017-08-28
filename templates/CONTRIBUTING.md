@@ -31,18 +31,18 @@ It would be helpful to answer some questions:
   * Why do you think it might be valuable for other users?
   * How would you implement the feature?
 
-## Helping others
+## Helping Others
 
 Please help other users whenever you can.
 
 {{ with .SupportPlatforms }}There are various places for helping others:
 {{ range . }}* [{{ .Service }}]({{ .Link }}){{ end }}{{ end }}
 
-## User support/questions
+## User Support/Questions
 
 Non technical or user centric support might be available from the community for more information read our [support guidelines](/SUPPORT.md)
 
-## Closing policy for issues and pull/merge requests
+## Issue/Pull Request/Merge Request Closing Policy
 
 Time is precious and sparse, please consider this and search through available issues first.
 
@@ -54,11 +54,11 @@ Any issues or pull/merge requests not following our [code of conduct](/CODE_OF_C
 
 Inactive issues or pull/merge requests may be closed after a specific period. This enables us to focus and work on the current/primary items.
 
-### Merge request guidelines
+### Pull Request/Merge Request Guidelines
 
 Please keep the change in a single pull/merge request **as small as possible**. If you want to contribute a large feature think very hard what the minimum viable change is. The smaller a pull/merge request is the more likely it is it will be merged (quickly). Afterwards follow-up requests for enhancements are appreciated.
 
-### Contribution acceptance criteria
+### Contribution Acceptance Criteria
 
 * The change is as small as possible
 * Include proper tests and make all tests pass

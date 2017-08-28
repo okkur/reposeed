@@ -1,4 +1,4 @@
-# Support for using {{ .Project.Name }}
+# Support using {{ .Project.Name }}
 
 Welcome to {{ .Project.Name }}! We use {{ .Repo.Type }} for tracking bugs and feature requests.
 This isn't the right place to get support for using {{ .Project.Name }}, but below we made user centric resources available.
