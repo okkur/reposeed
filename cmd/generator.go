@@ -15,6 +15,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"html/template"
 	"io/ioutil"
 	"log"
@@ -30,10 +31,10 @@ type config struct {
 		Description string `yaml:"description"`
 	} `yaml:"project"`
 	Vision struct {
-		Type        string `yaml:"type"`
-		Items        []string `yaml:"items"`
-		Concept        string `yaml:"concept"`
-		Aim        string `yaml:"aim"`
+		Type    string   `yaml:"type"`
+		Items   []string `yaml:"items"`
+		Concept string   `yaml:"concept"`
+		Aim     string   `yaml:"aim"`
 	} `yaml:"vision"`
 	Repo struct {
 		Type string `yaml:"type"`
@@ -88,35 +89,44 @@ func parseConfig(path string) config {
 	return conf
 }
 
-func generateFile(config config, path string, newPath string) {
+func generateFile(config config, path string, newPath string, overwrite bool) error {
 	temp, err := template.ParseFiles(path)
 	if err != nil {
-		log.Println("Unable to parse file: ", err)
-		return
+		return fmt.Errorf("unable to parse file: %s", err)
 	}
 
-	if _, err := os.Stat(newPath); os.IsNotExist(err) {
+	if _, e := os.Stat(newPath); os.IsNotExist(e) {
 		os.MkdirAll(filepath.Dir(newPath), os.ModePerm)
+	}
+
+	if !overwrite {
+		if _, e := os.Stat(newPath); !os.IsNotExist(e) {
+			return fmt.Errorf("file %s not overwritten", newPath)
+		}
 	}
 
 	file, err := os.Create(newPath)
 	defer file.Close()
 	if err != nil {
-		log.Println("Unable to create file: ", err)
-		return
+		return fmt.Errorf("unable to create file: %s", err)
 	}
 
 	err = temp.Execute(file, config)
 	if err != nil {
-		log.Print("Unable to parse template: ", err)
-		return
+		return fmt.Errorf("unable to parse template: %s", err)
 	}
+
+	return nil
 }
+
 func main() {
-	var tempDir string
-	var conf string
+	var tempDir, conf string
+	var overwrite bool
+
 	flag.StringVar(&tempDir, "input", "templates", "Template directory")
 	flag.StringVar(&conf, "conf", ".seed-config.yaml", "Config file")
+	flag.BoolVar(&overwrite, "overwrite", false, "Force overwrite files")
+
 	flag.Parse()
 
 	config := parseConfig(conf)
@@ -129,10 +139,15 @@ func main() {
 		if bl[info.Name()] {
 			return filepath.SkipDir
 		}
+
 		if !info.IsDir() {
 			newPath, _ := filepath.Rel(tempDir, path)
-			generateFile(config, path, newPath)
+			err := generateFile(config, path, newPath, overwrite)
+			if err != nil {
+				log.Println(err)
+			}
 		}
+
 		return nil
 	})
 
