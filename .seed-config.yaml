@@ -22,6 +22,9 @@ copyright:
   owner: "The RepoSeed authors"
   year: "2017"
 
+cla:
+  copyrightHolder: "Michael Grosser"
+
 maintainers:
   - name: "Michael Grosser"
     nick: "stp-ip"
