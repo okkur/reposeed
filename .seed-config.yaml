@@ -48,11 +48,6 @@ repo:
   link: "https://github.com/okkur/reposeed"
   type: "Github"
 
-issueTemplate:
-  questions:
-  - "OS?"
-  - "CLI version?"
-
 badges:
   - image: "https://img.shields.io/badge/state-beta-blue.svg"
     alt: "state"

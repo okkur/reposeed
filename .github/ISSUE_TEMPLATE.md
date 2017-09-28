@@ -15,6 +15,4 @@ bug | feature
 
 **Environment**:
 - RepoSeed version:  
-- OS?:  
-- CLI version?:  
 - Others:
