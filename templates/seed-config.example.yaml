@@ -13,6 +13,7 @@ vision:
   type: "personal" # personal is the default.
   overview: |
     This project thrives to be open, transparent and helpful.
+  # required
   items:
     - "Only specific categories allowed"
     - "Bugfixes only"

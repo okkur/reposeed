@@ -5,7 +5,7 @@ By submitting code as an individual you agree to the
 By submitting code as an entity you agree to the
 [corporate contributor license agreement](/CLA/CORPORATE_CONTRIBUTOR_LICENSE_AGREEMENT.md).
 
-_Should always come as first item in contributor guide!_
+<!-- Should always come as first item in contributor guide! -->
 
 ---
 
@@ -15,7 +15,7 @@ Thank you for your interest in contributing to {{ .Project.Name }}. This guide h
 
 ### First contribution
 
-If you are starting out contributing to {{ .Project.Name }}, there might be smaller scoped issues available under the "starter issues" label.
+If you are starting out contributing to {{ .Project.Name }}, there might be smaller scoped "starter issues" available:
 [Current starter issues]({{ .ContributionLinks.StarterIssues }})
 
 ### Report bug
@@ -36,7 +36,8 @@ It would be helpful to answer some questions:
 Please help other users whenever you can.
 
 {{ with .SupportPlatforms }}There are various places for helping others:
-{{ range . }}* [{{ .Service }}]({{ .Link }}){{ end }}{{ end }}
+{{ range . }}* [{{ .Service }}]({{ .Link }})
+{{ end }}{{ end }}
 
 ## User Support/Questions
 
@@ -46,7 +47,7 @@ Non technical or user centric support might be available from the community for 
 
 Time is precious and sparse, please consider this and search through available issues first.
 
-Treat every participant with courtesy and respect and add as much information when creating an issue or pull/merge request.
+Treat every participant with courtesy, respect and add as much information when creating an issue or pull/merge request.
 
 All issues and pull/merge requests should be in English and refrain from using any inappropriate language.
 
@@ -61,7 +62,7 @@ Please keep the change in a single pull/merge request **as small as possible**. 
 ### Contribution Acceptance Criteria
 
 * The change is as small as possible
-* Include proper tests and make all tests pass
+* Includes proper tests and passes all tests
 * Does not break any existing functionality
 * Fixes one specific issue or implements one specific feature (do not combine things, send separate requests if needed)
 * Contains functionality we think other users will benefit from too
