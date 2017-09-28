@@ -62,6 +62,7 @@ type config struct {
 	Badges []struct {
 		Image string `yaml:"image,omitempty"`
 		Link  string `yaml:"link,omitempty"`
+		Alt   string `yaml:"alt,omitempty"`
 	} `yaml:"badges"`
 	SupportLinks struct {
 		Documentation   string `yaml:"documentation,omitempty"`

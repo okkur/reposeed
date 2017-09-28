@@ -55,7 +55,10 @@ issueTemplate:
 
 badges:
   - image: "https://img.shields.io/badge/state-beta-blue.svg"
+    alt: "state"
   - image: "https://img.shields.io/github/release/okkur/reposeed.svg"
     link: "https://github.com/okkur/reposeed/releases"
+    alt: "release"
   - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
     link: "LICENSE"
+    alt: "license"

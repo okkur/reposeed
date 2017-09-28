@@ -3,11 +3,11 @@
 Create your next open source repository with the basics necessary
 
 
-[![https://img.shields.io/badge/state-beta-blue.svg]][]
+[![state](https://img.shields.io/badge/state-beta-blue.svg)]()
 
-[![https://img.shields.io/github/release/okkur/reposeed.svg]][https://github.com/okkur/reposeed/releases]
+[![release](https://img.shields.io/github/release/okkur/reposeed.svg)](https://github.com/okkur/reposeed/releases)
 
-[![https://img.shields.io/github/license/okkur/reposeed.svg]][LICENSE]
+[![license](https://img.shields.io/github/license/okkur/reposeed.svg)](LICENSE)
 
 
 ----

@@ -3,7 +3,7 @@
 {{ .Project.OneLiner }}
 
 {{ range .Badges }}
-[![{{ .Image }}]][{{ .Link }}]
+[![{{ .Alt }}]({{ .Image }})]({{ .Link }})
 {{ end }}
 
 ----

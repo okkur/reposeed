@@ -1,7 +1,7 @@
 project:
   name: "Project123" # required
   state: "unstable" # unstable, beta, stable are supported
-  image: "https://github.com/okkur/reposeed/master/docs/img/logo.svg"
+  image: "/master/logo.svg"
   oneLiner: "Create your next open source repository with the basics necessary"
   description: |
     Enable your next open source repository to start with the necessary batteries included.
@@ -63,7 +63,10 @@ issueTemplate:
 
 badges:
   - image: "https://img.shields.io/badge/state-unstable-blue.svg"
+    alt: "state"
   - image: "https://img.shields.io/github/release/okkur/reposeed.svg"
     link: "https://github.com/okkur/reposeed/releases"
+    alt: "release"
   - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
     link: "LICENSE"
+    alt: "license"
