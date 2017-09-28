@@ -4,13 +4,13 @@ project:
   state: "beta"
   image: "https://github.com/okkur/reposeed/blob/master/docs/img/logo.svg"
   description: |
-    Start with the base layer necessary to focus on your project and not on the repository.  
+    Start with the base layer necessary to focus on your project and not on the repository.
     Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 vision:
   type: "personal" # personal is the default.
   items:
-    - "Generic seed files for a useful base"
+    - "Generic seed files as base layer"
     - "Additions to reposeed only for generic usage"
     - "Default useage on first initialization"
     - "Specific additions should be added to the files after generation"
@@ -21,17 +21,13 @@ contributionLinks:
   issueTemplate: "/.github/ISSUE_TEMPLATE.md"
   starterIssues: "https://github.com/okkur/reposeed/labels/starter%20issue"
 
-supportPlatforms:
-  - service: "User Mailinglist"
-    link: "example.com"
-
 supportLinks:
   documentation: "/docs"
 
 emails:
-  commercialSupport: "support@seetheprogress.net"
-  security: "security@seetheprogress.net"
-  coc: "coc@seetheprogress.net"
+  commercialSupport: "support@okkurlabs.com"
+  security: "security@okkurlabs.com"
+  coc: "coc@okkurlabs.com"
 
 copyright:
   owner: "The RepoSeed authors"

@@ -34,10 +34,11 @@ type config struct {
 		Image       string `yaml:"image,omitempty"`
 	} `yaml:"project"`
 	Vision struct {
-		Type    string   `yaml:"type"`
-		Items   []string `yaml:"items"`
-		Concept string   `yaml:"concept"`
-		Aim     string   `yaml:"aim"`
+		Type     string   `yaml:"type"`
+		Items    []string `yaml:"items"`
+		Concept  string   `yaml:"concept"`
+		Overview string   `yaml:"overview"`
+		Aim      string   `yaml:"aim"`
 	} `yaml:"vision"`
 	Repo struct {
 		Type string `yaml:"type"`

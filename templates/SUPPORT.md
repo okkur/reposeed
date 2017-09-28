@@ -17,9 +17,10 @@ Please remember this is a community project and you are not entitled to free sup
 The {{ .Project.Name }} community might be active on various platforms.
 
 {{ with .SupportPlatforms }}The current platforms used by the community:
-{{ range . }}* [{{ .Service }}]({{ .Link }}){{ end }}{{ end }}
+{{ range . }}* [{{ .Service }}]({{ .Link }})
+{{ end }}{{ end }}
 
-## Documentation 
+## Documentation
 
-{{ with .SupportLinks.Documentation }}* [User Documentation]({{ . }}){{ end }} 
-{{ with .SupportLinks.Troubleshooting }}* [Troubleshooting Guide]({{ . }}){{ end }} 
+{{ with .SupportLinks.Documentation }}* [User Documentation]({{ . }}){{ end }}
+{{ with .SupportLinks.Troubleshooting }}* [Troubleshooting Guide]({{ . }}){{ end }}

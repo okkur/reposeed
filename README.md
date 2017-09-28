@@ -7,7 +7,7 @@ Create your next open source repository with batteries included
 ----
 
 # RepoSeed
-Start with the base layer necessary to focus on your project and not on the repository.  
+Start with the base layer necessary to focus on your project and not on the repository.
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 
@@ -18,4 +18,4 @@ NOTE: This is a beta release, we do not consider it completely production ready 
 
 ----
 
-Copyright 2017 The RepoSeed authors
+Copyright 2017 - The RepoSeed authors

@@ -1,38 +1,41 @@
 project:
-  name: "Project123" # required
+  name: "Example Project" # required
   state: "unstable" # unstable, beta, stable are supported
   image: "/blob/master/logo.svg"
-  oneLiner: "Create your next open source repository with the basics necessary"
+  oneLiner: "Creating awesome things, while enjoying live."
   description: |
-    Enable your next open source repository to start with the necessary batteries included.
-    Licensing, repository structure, minimal documentation and even more boilerplate from your first commit.
+    Free software developers guarantee everyone equal rights to their programs;
+    any user can study the source code, modify it, and share the program.
+    By contrast, most software carries fine print that denies users these basic rights, leaving them susceptible to the whims of its owners.
   # required
 
 vision:
   type: "personal" # personal is the default.
+  overview: |
+    This project thrives to be open, transparent and helpful.
   items:
     - "Only specific categories allowed"
     - "Bugfixes only"
     - "For personal projects only"
-  concept: "Project123's core concept to showcase how, why it does what it does."
-  aim: "Project123 should only provide a small core and further additions should be done in helper projects/plugins or some sort."
+  concept: "Example Project's core concept to showcase how, why it does what it does."
+  aim: "Example Project should only provide a small core and further additions should be done in helper projects/plugins or some sort."
 
 supportPlatforms:
   - service: "Chat"
     link: "chat.example.com"
   - service: "User Mailinglist"
     link: "list.example.com"
-  - service: "StackOverflow"
-    link: "stackoverflow.example.com"
+  - service: "Forum"
+    link: "forum.example.com"
 
 supportLinks:
   documentation: "/docs"
   examples: "/examples"
-  troubleshooting: "/docs/troubleshooting.md
+  troubleshooting: "/docs/troubleshooting.md"
 
 contributionLinks:
   issueTemplate: "/.github/ISSUE_TEMPLATE.md"
-  starterIssues: "https://github.com/okkur/reposeed/labels/starter%20issue"
+  starterIssues: "https://github.com/dear-github/dear-github/labels/starter%20issue" # replace dear-github with your actual url
 
 emails:
   commercialSupport: "payed-support@example.com"
@@ -40,20 +43,20 @@ emails:
   coc: "coc@example.com" # required
 
 copyright:
-  owner: "The Project123 authors" # falls back to project.name
+  owner: "The Example Project authors" # default is project.name
   year: "2017" # required
 
 cla:
-  copyrightHolder: "Michael Grosser" # required
+  copyrightHolder: "Tiny Gopher" # required
 
 maintainers:
-  - name: "Big Robot"
-    nick: "nickname"
-  - name: "Little Marmot"
-    nick: "nickname"
+  - name: "Huge Gopher"
+    nick: "hugeGopher"
+  - name: "Tiny Gopher"
+    nick: "tinyGopher"
 
 repo:
-  link: "https://github.com/okkur/reposeed" # required
+  link: "https://github.com/dear-github/dear-github/" # required
   type: "Github" # required
 
 issueTemplate:
@@ -64,9 +67,9 @@ issueTemplate:
 badges:
   - image: "https://img.shields.io/badge/state-unstable-blue.svg"
     alt: "state"
-  - image: "https://img.shields.io/github/release/okkur/reposeed.svg"
-    link: "https://github.com/okkur/reposeed/releases"
+  - image: "https://img.shields.io/github/release/dear-github/dear-github.svg"
+    link: "https://github.com/dear-github/dear-github/releases"
     alt: "release"
-  - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
+  - image: "https://img.shields.io/github/license/dear-github/dear-github.svg"
     link: "LICENSE"
     alt: "license"

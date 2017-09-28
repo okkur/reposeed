@@ -10,16 +10,15 @@ There are a lot of helpful volunteers there who may be able to help you. If your
 If it happens that you know the solution to an existing bug, please first open the issue in order to keep track of it and then open the relevant pull/merge request that potentially fixes it.
 
 Please remember this is a community project and you are not entitled to free support. Be kind to anyone helping out.
-For commercial support reach out to support@seetheprogress.net.
+For commercial support reach out to support@okkurlabs.com.
 
 ## Community Support
 
 The RepoSeed community might be active on various platforms.
 
-The current platforms used by the community:
-* [User Mailinglist](example.com)
 
-## Documentation 
 
-* [User Documentation](/docs) 
- 
+## Documentation
+
+* [User Documentation](/docs)
+
