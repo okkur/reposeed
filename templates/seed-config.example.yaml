@@ -1,6 +1,12 @@
 project:
   name: "Project123" # required
-  description: "Simplest project description you could imagine" # required
+  state: "unstable" # unstable, beta, stable are supported
+  image: "https://github.com/okkur/reposeed/master/docs/img/logo.svg"
+  oneLiner: "Create your next open source repository with the basics necessary"
+  description: |
+    Enable your next open source repository to start with the necessary batteries included.
+    Licensing, repository structure, minimal documentation and even more boilerplate from your first commit.
+  # required
 
 vision:
   type: "personal" # personal is the default.
@@ -54,3 +60,10 @@ issueTemplate:
   questions:
   - "OS"
   - "CLI version"
+
+badges:
+  - image: "https://img.shields.io/badge/state-unstable-blue.svg"
+  - image: "https://img.shields.io/github/release/okkur/reposeed.svg"
+    link: "https://github.com/okkur/reposeed/releases"
+  - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
+    link: "LICENSE"

@@ -29,6 +29,9 @@ type config struct {
 	Project struct {
 		Name        string `yaml:"name"`
 		Description string `yaml:"description"`
+		State       string `yaml:"state,omitempty"`
+		OneLiner    string `yaml:"oneLiner,omitempty"`
+		Image       string `yaml:"image,omitempty"`
 	} `yaml:"project"`
 	Vision struct {
 		Type    string   `yaml:"type"`
@@ -56,6 +59,10 @@ type config struct {
 		Security          string `yaml:"security"`
 		Coc               string `yaml:"coc"`
 	} `yaml:"emails"`
+	Badges []struct {
+		Image string `yaml:"image,omitempty"`
+		Link  string `yaml:"link,omitempty"`
+	} `yaml:"badges"`
 	SupportLinks struct {
 		Documentation   string `yaml:"documentation,omitempty"`
 		Examples        string `yaml:"examples,omitempty"`

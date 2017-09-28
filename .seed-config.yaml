@@ -1,6 +1,11 @@
 project:
   name: "RepoSeed"
-  description: "Repository template for your next open source project"
+  oneLiner: "Create your next open source repository with the basics necessary"
+  state: "beta"
+  image: "https://github.com/okkur/reposeed/master/docs/img/logo.svg"
+  description: |
+    Enable your next open source repository to start with the necessary batteries included.
+    Licensing, repository structure, minimal documentation and even more boilerplate from your first commit.
 
 vision:
   type: "personal" # personal is the default.
@@ -47,3 +52,10 @@ issueTemplate:
   questions:
   - "OS?"
   - "CLI version?"
+
+badges:
+  - image: "https://img.shields.io/badge/state-beta-blue.svg"
+  - image: "https://img.shields.io/github/release/okkur/reposeed.svg"
+    link: "https://github.com/okkur/reposeed/releases"
+  - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
+    link: "LICENSE"

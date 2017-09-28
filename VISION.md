@@ -2,7 +2,9 @@
 
 RepoSeed is a personal project. From our current viewpoint, its role is:
 
-Repository template for your next open source project
+Enable your next open source repository to start with the necessary batteries included.
+Licensing, repository structure, minimal documentation and even more boilerplate from your first commit.
+
 
 Our detailed items:
 * Generic seed files for a useful base* Additions to reposeed only for generic usage* Default useage on first initialization* Specific additions should be added to the files after generation
