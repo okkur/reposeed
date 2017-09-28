@@ -22,8 +22,8 @@ NOTE: This is a beta release, we do not consider it completely production ready 
 
 ----
 
-Code is licensed under the [Apache License, Version 2.0](/LICENSE)
-Documentation is licensed under [Creative Commons BY 4.0](/docs/LICENSE)
+Code is licensed under the [Apache License, Version 2.0](/LICENSE)  
+Documentation is licensed under [Creative Commons BY 4.0](/docs/LICENSE)  
 
 Illustrations, trademarks and third-party resources are owned by their respective party and are subject to different licensing.
 
