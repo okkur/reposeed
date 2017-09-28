@@ -2,7 +2,8 @@ project:
   name: "RepoSeed"
   oneLiner: "Create your next open source repository with batteries included"
   state: "beta"
-  image: "https://github.com/okkur/reposeed/blob/master/docs/img/logo.svg"
+  image: "https://github.com/okkur/reposeed/blob/master/media/logo.svg"
+  website: ""
   description: |
     Start with the base layer necessary to focus on your project and not on the repository.
     Licensing, structure, documentation and more boilerplate to get you started from your first commit.

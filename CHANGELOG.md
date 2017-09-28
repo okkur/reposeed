@@ -1,8 +1,8 @@
 __[v0.0.1](#v001)__
   - [Downloads for v0.0.1](#downloads-for-v001)
   - [Changelog since v0.0.0](#changelog-since-v000)
-  
-  
+
+
 # v0.0.1
 _2017-01-01_
 [Documentation](/docs)

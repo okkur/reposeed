@@ -32,6 +32,7 @@ type config struct {
 		State       string `yaml:"state,omitempty"`
 		OneLiner    string `yaml:"oneLiner,omitempty"`
 		Image       string `yaml:"image,omitempty"`
+		Website     string `yaml:"website,omitempty"`
 	} `yaml:"project"`
 	Vision struct {
 		Type     string   `yaml:"type"`

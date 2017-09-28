@@ -2,6 +2,7 @@ project:
   name: "Example Project" # required
   state: "unstable" # unstable, beta, stable are supported
   image: "/blob/master/logo.svg"
+  website: "example.com"
   oneLiner: "Creating awesome things, while enjoying live."
   description: |
     Free software developers guarantee everyone equal rights to their programs;
