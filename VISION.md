@@ -2,8 +2,8 @@
 
 RepoSeed is a personal project. From our current viewpoint, its role is:
 
-Enable your next open source repository to start with the necessary batteries included.
-Licensing, repository structure, minimal documentation and even more boilerplate from your first commit.
+Start with the batteries included in your next repository.
+Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 
 Our detailed items:
