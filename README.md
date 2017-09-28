@@ -1,4 +1,4 @@
-<img src="https://github.com/okkur/reposeed/blob/master/docs/img/logo.svg" width="100">
+<img src="https://github.com/okkur/reposeed/blob/master/docs/img/logo.svg" width="300">
 
 Create your next open source repository with the basics necessary
 

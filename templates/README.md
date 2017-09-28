@@ -1,4 +1,4 @@
-{{ with .Project.Image }}<img src="{{ . }}" width="100">{{ else }} # {{ .Project.Name }}{{ end }}
+{{ with .Project.Image }}<img src="{{ . }}" width="300">{{ else }} # {{ .Project.Name }}{{ end }}
 
 {{ .Project.OneLiner }}
 
