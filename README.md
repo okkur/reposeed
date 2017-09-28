@@ -1,13 +1,13 @@
 <img src="https://github.com/okkur/reposeed/blob/master/docs/img/logo.svg" width="300">
 
-Create your next open source repository with the basics ready
+Create your next open source repository with batteries included
 
 [![state](https://img.shields.io/badge/state-beta-blue.svg)]() [![release](https://img.shields.io/github/release/okkur/reposeed.svg)](https://github.com/okkur/reposeed/releases) [![license](https://img.shields.io/github/license/okkur/reposeed.svg)](LICENSE) 
 
 ----
 
 # RepoSeed
-Start with the batteries included in your next repository.
+Start with the base layer necessary to focus on your project and not on the repository.
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 

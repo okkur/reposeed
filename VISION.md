@@ -2,7 +2,7 @@
 
 RepoSeed is a personal project. From our current viewpoint, its role is:
 
-Start with the batteries included in your next repository.
+Start with the base layer necessary to focus on your project and not on the repository.
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 
