@@ -1,11 +1,11 @@
 {{ if .Project.Image }}
-  {{ if .Project.Website }}
-    <a href="{{ .Project.Website }}"><img src="{{ .Project.Image }}" width="500"></a>
-  {{ else }}
-    <img src="{{ .Project.Image }}" width="500">
-  {{ end }}
+{{ if .Project.Website }}
+<a href="{{ .Project.Website }}"><img src="{{ .Project.Image }}" width="500"/></a>
 {{ else }}
-  # {{ .Project.Name }}
+<img src="{{ .Project.Image }}" width="500"/>
+{{ end }}
+{{ else }}
+# {{ .Project.Name }}
 {{ end }}
 
 {{ .Project.OneLiner }}
