@@ -2,6 +2,7 @@
 
 RepoSeed is a personal project. From our current viewpoint, its role is:
 
+Providing a generic base layer for new open source repositories.
 
 
 Our detailed items:

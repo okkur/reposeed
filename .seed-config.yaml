@@ -9,6 +9,8 @@ project:
 
 vision:
   type: "personal" # personal is the default.
+  overview: |
+    Providing a generic base layer for new open source repositories.
   items:
     - "Generic seed files as base layer"
     - "Additions to reposeed only for generic usage"
