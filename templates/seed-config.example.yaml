@@ -1,7 +1,7 @@
 project:
   name: "Project123" # required
   state: "unstable" # unstable, beta, stable are supported
-  image: "/master/logo.svg"
+  image: "/blob/master/logo.svg"
   oneLiner: "Create your next open source repository with the basics necessary"
   description: |
     Enable your next open source repository to start with the necessary batteries included.

@@ -1,14 +1,8 @@
-<img src="https://github.com/okkur/reposeed/master/docs/img/logo.svg" width="100">
+<img src="https://github.com/okkur/reposeed/blob/master/docs/img/logo.svg" width="100">
 
 Create your next open source repository with the basics necessary
 
-
-[![state](https://img.shields.io/badge/state-beta-blue.svg)]()
-
-[![release](https://img.shields.io/github/release/okkur/reposeed.svg)](https://github.com/okkur/reposeed/releases)
-
-[![license](https://img.shields.io/github/license/okkur/reposeed.svg)](LICENSE)
-
+[![state](https://img.shields.io/badge/state-beta-blue.svg)]()[![release](https://img.shields.io/github/release/okkur/reposeed.svg)](https://github.com/okkur/reposeed/releases)[![license](https://img.shields.io/github/license/okkur/reposeed.svg)](LICENSE)
 
 ----
 

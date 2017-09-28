@@ -1,10 +1,8 @@
-<img src="{{ .Project.Image }}" width="100">
+{{ with .Project.Image }}<img src="{{ . }}" width="100">{{ else }} # {{ .Project.Name }}{{ end }}
 
 {{ .Project.OneLiner }}
 
-{{ range .Badges }}
-[![{{ .Alt }}]({{ .Image }})]({{ .Link }})
-{{ end }}
+{{ range .Badges }}[![{{ .Alt }}]({{ .Image }})]({{ .Link }}){{ end }}
 
 ----
 
