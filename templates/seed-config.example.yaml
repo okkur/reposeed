@@ -81,6 +81,9 @@ badges:
     link: "LICENSE"
     alt: "license"
 
+Tracking:
+  link: "stats.example.com/" # image tracking based
+
 # To learn from projects and get a sense of who is using reposeed
 # We added an optional tracking pixel
 usageTracking: false
