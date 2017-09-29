@@ -60,3 +60,5 @@ badges:
   - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
     link: "LICENSE"
     alt: "license"
+
+usageTracking: true

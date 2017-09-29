@@ -80,3 +80,7 @@ badges:
   - image: "https://img.shields.io/github/license/dear-github/dear-github.svg"
     link: "LICENSE"
     alt: "license"
+
+# To learn from projects and get a sense of who is using reposeed
+# We added an optional tracking pixel
+usageTracking: false

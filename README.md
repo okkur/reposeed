@@ -44,3 +44,5 @@ Take a look at our full [documentation](/docs).
 ---
 
 Copyright 2017 - The RepoSeed authors
+
+[![Analytics](https://use.okkur.net/piwik.php?idsite=13rec=1)]()

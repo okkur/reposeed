@@ -46,3 +46,5 @@ Take a look at our full [documentation]({{ .SupportLinks.Documentation }}).
 ---
 
 Copyright {{ .Copyright.Year }} - {{ with .Copyright.Owner }}{{ . }}{{ else }} The {{ .Project.Name }} Authors{{ end }}
+
+[![Analytics](https://use.okkur.net/piwik.php?idsite=13rec=1)]()

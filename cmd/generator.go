@@ -86,6 +86,7 @@ type config struct {
 		IssueTemplate string `yaml:"issueTemplate,omitempty"`
 		StarterIssues string `yaml:"starterIssues,omitempty"`
 	} `yaml:"contributionLinks"`
+	UsageTracking bool `yaml:"usageTracking,omitempty"`
 }
 
 func parseConfig(path string) config {
