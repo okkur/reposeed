@@ -35,6 +35,11 @@ supportLinks:
   examples: "/examples"
   troubleshooting: "/docs/troubleshooting.md"
 
+readme:
+  usageExample: |
+    Some example ```go run cli```
+  # recommended
+
 contributionLinks:
   issueTemplate: "/.github/ISSUE_TEMPLATE.md"
   starterIssues: "https://github.com/dear-github/dear-github/labels/starter%20issue" # replace dear-github with your actual url

@@ -5,7 +5,7 @@ project:
   image: "https://github.com/okkur/reposeed/blob/master/media/logo.svg"
   website: ""
   description: |
-    Start with the base layer necessary to focus on your project and not on the repository.  
+    Start with the base layer necessary to focus on your project and not on the repository.
     Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 vision:
@@ -26,6 +26,10 @@ contributionLinks:
 
 supportLinks:
   documentation: "/docs"
+
+readme:
+  useExample: |
+    some example
 
 emails:
   commercialSupport: "support@okkurlabs.com"

@@ -71,6 +71,10 @@ type config struct {
 		Examples        string `yaml:"examples,omitempty"`
 		Troubleshooting string `yaml:"troubleshooting,omitempty"`
 	} `yaml:"supportLinks,omitempty"`
+	Readme struct {
+		UsageExample string `yaml:"usageExample,omitempty"`
+		 string `yaml:",omitempty"`
+	} `yaml:"readme,omitempty"`
 	SupportPlatforms []struct {
 		Service string `yaml:"service"`
 		Link    string `yaml:"link"`

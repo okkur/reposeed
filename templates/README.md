@@ -12,6 +12,11 @@
 
 {{ range .Badges }}[![{{ .Alt }}]({{ .Image }})]({{ .Link }}) {{ end }}
 
+---
+
+{{ if eq .Project.State "beta" }}**NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.**{{ end }}
+{{ if eq .Project.State "unstable" }}**NOTE: This is a work-in-progress, we do not consider it production ready. Use at your own risk.**{{ end }}
+
 ----
 
 # {{ .Project.Name }}
@@ -19,15 +24,22 @@
 
 ---
 
-{{ if eq .Project.State "beta" }}NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.{{ end }}
-{{ if eq .Project.State "unstable" }}NOTE: This is a work-in-progress, we do not consider it production ready. Use at your own risk.{{ end }}
+## Using {{ .Project.Name }}
+
+{{ with .Readme.UsageExample }}{{ . }}{{ end }}
+
+Take a look at our full [documentation]({{ .SupportLinks.Documentation }}).
+
+## Helping out
+
+<!-- contributing details -->
 
 ----
 
-Code is licensed under the [Apache License, Version 2.0](/LICENSE)  
-Documentation is licensed under [Creative Commons BY 4.0](/docs/LICENSE)  
+*Code is licensed under the [Apache License, Version 2.0](/LICENSE)*  
+*Documentation is licensed under [Creative Commons BY 4.0](/docs/LICENSE)*  
 
-Illustrations, trademarks and third-party resources are owned by their respective party and are subject to different licensing.
+*Illustrations, trademarks and third-party resources are owned by their respective party and are subject to different licensing.*
 
 ---
 
