@@ -24,7 +24,8 @@ Licensing, structure, documentation and more boilerplate to get you started from
 
 ## Using RepoSeed
 
-```
+
+  ```
 git clone https://github.com/okkur/reposeed.git  
 mkdir YOUR-PROJECT
 cp seed-config.example.yaml YOUR-PROJECT/.seed-config.yaml
@@ -33,15 +34,18 @@ Change .seed-config.yaml to your needs.
 ```
 go run cmd/generator.go --input=reposeed/templates --output=YOUR-PROJECT
 ```
-Refine to your specific needs.
+
 
 
 
 Take a look at our full [documentation](/docs).
 
+
+## Support
+For detailed information on support options see our [support guide](/SUPPORT.md).
+
 ## Helping out
-
-
+Best place to start is our [contribution guide](/CONTRIBUTING.md).
 
 ----
 

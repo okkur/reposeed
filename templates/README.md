@@ -26,14 +26,19 @@
 
 ## Using {{ .Project.Name }}
 
-{{ with .Readme.UsageExample }}{{ . }}{{ end }}
+{{ with .Readme.UsageExample }}
+  {{ . }}
+{{ end }}
 
 {{ with .SupportLinks.Documentation }}
 Take a look at our full [documentation]({{ . }}).
 {{ end }}
-## Helping out
 
-<!-- contributing details -->
+## Support
+For detailed information on support options see our [support guide](/SUPPORT.md).
+
+## Helping out
+Best place to start is our [contribution guide](/CONTRIBUTING.md).
 
 ----
 
