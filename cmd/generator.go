@@ -133,10 +133,11 @@ func generateFile(config config, path string, newPath string, overwrite bool) er
 }
 
 func main() {
-	var tempDir, conf string
+	var tempDir, outputDir, conf string
 	var overwrite bool
 
 	flag.StringVar(&tempDir, "input", "templates", "Template directory")
+	flag.StringVar(&outputDir, "output", "", "Output directory")
 	flag.StringVar(&conf, "conf", ".seed-config.yaml", "Config file")
 	flag.BoolVar(&overwrite, "overwrite", false, "Force overwrite files")
 
@@ -154,7 +155,11 @@ func main() {
 		}
 
 		if !info.IsDir() {
-			newPath, _ := filepath.Rel(tempDir, path)
+			relPath, _ := filepath.Rel(tempDir, path)
+			newPath := relPath
+			if outputDir != "" {
+				newPath = filepath.Join(outputDir, relPath)
+			}
 			err := generateFile(config, path, newPath, overwrite)
 			if err != nil {
 				log.Println(err)
