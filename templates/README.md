@@ -12,13 +12,9 @@
 
 {{ range .Badges }}[![{{ .Alt }}]({{ .Image }})]({{ .Link }}) {{ end }}
 
-----
-
 {{ if eq .Project.State "beta" }}**NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.**{{ end }}
 {{ if eq .Project.State "unstable" }}**NOTE: This is a work-in-progress, we do not consider it production ready. Use at your own risk.**{{ end }}
-{{ if .Project.State }}
----
-{{ end }}
+
 
 # {{ .Project.Name }}
 {{ .Project.Description }}
