@@ -48,9 +48,9 @@ Take a look at our full [documentation]({{ .SupportLinks.Documentation }}).
 Copyright {{ .Copyright.Year }} - {{ with .Copyright.Owner }}{{ . }}{{ else }} The {{ .Project.Name }} Authors{{ end }}
 
 {{ if .UsageTracking }}
-[![Analytics](https://stats.seetheprogress.eu/piwik.php?idsite=13&rec=1&url={{ .Repo.Link }}&c_n={{ .Project.Name }})]()
+![](https://stats.seetheprogress.eu/piwik.php?idsite=13&rec=1&url={{ .Repo.Link }}&c_n={{ .Project.Name }})
 {{ end }}
 
 {{ if .Tracking }}
-[![Analytics]({{ .Tracking.Link }})]()
+![]({{ .Tracking.Link }})
 {{ end }}
