@@ -60,8 +60,3 @@ badges:
   - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
     link: "LICENSE"
     alt: "license"
-
-Tracking:
-  link: "https://stats.seetheprogress.eu/piwik.php?idsite=14rec=1"
-
-usageTracking: true

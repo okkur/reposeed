@@ -44,11 +44,3 @@ Take a look at our full [documentation](/docs).
 ---
 
 Copyright 2017 - The RepoSeed authors
-
-
-![](https://stats.seetheprogress.eu/piwik.php?idsite=13&rec=1&url=https://github.com/okkur/reposeed&c_n=RepoSeed)
-
-
-
-![](https://stats.seetheprogress.eu/piwik.php?idsite=14rec=1)
-

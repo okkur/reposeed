@@ -46,11 +46,3 @@ Take a look at our full [documentation]({{ .SupportLinks.Documentation }}).
 ---
 
 Copyright {{ .Copyright.Year }} - {{ with .Copyright.Owner }}{{ . }}{{ else }} The {{ .Project.Name }} Authors{{ end }}
-
-{{ if .UsageTracking }}
-![](https://stats.seetheprogress.eu/piwik.php?idsite=13&rec=1&url={{ .Repo.Link }}&c_n={{ .Project.Name }})
-{{ end }}
-
-{{ if .Tracking }}
-![]({{ .Tracking.Link }})
-{{ end }}
