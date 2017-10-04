@@ -31,13 +31,12 @@ readme:
   usageExample: |
     ```
     git clone https://github.com/okkur/reposeed.git  
-    mkdir your-project-repository
-    cp seed-config.example.yaml your-project-repository/.seed-config.yaml
+    mkdir YOUR-PROJECT
+    cp seed-config.example.yaml YOUR-PROJECT/.seed-config.yaml
     ```  
     Fill in your project's data and remove unnecessary configuration
     ```
-    cd your-project-repository 
-    go run cmd/generator.go --input=../reposeed/templates
+    go run cmd/generator.go --input=reposeed/templates --output=YOUR-PROJECT
     ```
     Refine your new base repository to your specific needs
 
