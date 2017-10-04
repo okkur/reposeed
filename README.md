@@ -28,7 +28,7 @@ cp reposeed/templates/seed-config.example.yaml YOUR-PROJECT/.seed-config.yaml
 ```  
 Change .seed-config.yaml to your needs.
 ```
-go run cmd/generator.go --input=reposeed/templates --output=YOUR-PROJECT
+go run reposeed/cmd/generator.go --conf=YOUR-PROJECT/.seed-config.yaml --input=reposeed/templates --output=YOUR-PROJECT
 ```
 
 
