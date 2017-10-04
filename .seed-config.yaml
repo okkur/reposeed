@@ -28,8 +28,14 @@ supportLinks:
   documentation: "/docs"
 
 readme:
-  useExample: |
-    some example
+  usageExample: |
+    ```git clone https://github.com/okkur/reposeed.git```
+    ```mkdir your-project-repository```
+    ```cp seed-config.example.yaml your-project-repository/.seed-config.yaml```
+    Fill in your project's data and remove unnecessary configuration
+    ```cd your-project-repository```
+    ```go run cmd/generator.go --input=../reposeed/templates```
+    Refine your new base repository to your specific needs
 
 emails:
   commercialSupport: "support@okkurlabs.com"

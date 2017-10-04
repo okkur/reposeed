@@ -73,7 +73,6 @@ type config struct {
 	} `yaml:"supportLinks,omitempty"`
 	Readme struct {
 		UsageExample string `yaml:"usageExample,omitempty"`
-		 string `yaml:",omitempty"`
 	} `yaml:"readme,omitempty"`
 	SupportPlatforms []struct {
 		Service string `yaml:"service"`

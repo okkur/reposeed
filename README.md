@@ -13,7 +13,6 @@ Create your next open source repository with batteries included
 **NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.**
 
 
-
 ---
 
 
@@ -22,13 +21,20 @@ Start with the base layer necessary to focus on your project and not on the repo
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 
----
 
 ## Using RepoSeed
 
+```git clone https://github.com/okkur/reposeed.git```
+```mkdir your-project-repository```
+```cp seed-config.example.yaml your-project-repository/.seed-config.yaml```
+Fill in your project&#39;s data and remove unnecessary configuration
+```cd your-project-repository```
+```go run cmd/generator.go --input=../reposeed/templates```
+Refine your new base repository to your specific needs
 
 
 Take a look at our full [documentation](/docs).
+
 
 ## Helping out
 
