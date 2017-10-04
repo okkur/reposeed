@@ -31,9 +31,9 @@ supportPlatforms:
     link: "forum.example.com"
 
 supportLinks:
-  documentation: "/docs"
+  documentation: "/docs" # recommended
   examples: "/examples"
-  troubleshooting: "/docs/troubleshooting.md"
+  troubleshooting: "/docs/troubleshooting.md" # recommended
 
 readme:
   usageExample: |

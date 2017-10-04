@@ -28,8 +28,9 @@
 
 {{ with .Readme.UsageExample }}{{ . }}{{ end }}
 
-Take a look at our full [documentation]({{ .SupportLinks.Documentation }}).
-
+{{ with .SupportLinks.Documentation }}
+Take a look at our full [documentation]({{ . }}).
+{{ end }}
 ## Helping out
 
 <!-- contributing details -->
