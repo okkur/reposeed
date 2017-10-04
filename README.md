@@ -28,7 +28,7 @@ Licensing, structure, documentation and more boilerplate to get you started from
   ```
 git clone https://github.com/okkur/reposeed.git  
 mkdir YOUR-PROJECT
-cp seed-config.example.yaml YOUR-PROJECT/.seed-config.yaml
+cp reposeed/templates/seed-config.example.yaml YOUR-PROJECT/.seed-config.yaml
 ```  
 Change .seed-config.yaml to your needs.
 ```
