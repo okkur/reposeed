@@ -33,6 +33,7 @@ type config struct {
 		OneLiner    string `yaml:"oneLiner,omitempty"`
 		Image       string `yaml:"image,omitempty"`
 		Website     string `yaml:"website,omitempty"`
+		Version     string `yaml:"version,omitempty"`
 	} `yaml:"project"`
 	Vision struct {
 		Type     string   `yaml:"type"`
