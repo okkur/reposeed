@@ -1,9 +1,9 @@
 ## Contributor license agreement
 
 By submitting code as an individual you agree to the
-[individual contributor license agreement](/CLA/INDIVIDUAL_CONTRIBUTOR_LICENSE_AGREEMENT.md).
+[individual contributor license agreement](/CLA/INDIVIDUAL_CONTRIBUTOR_LICENSE_AGREEMENT.md).  
 By submitting code as an entity you agree to the
-[corporate contributor license agreement](/CLA/CORPORATE_CONTRIBUTOR_LICENSE_AGREEMENT.md).
+[corporate contributor license agreement](/CLA/CORPORATE_CONTRIBUTOR_LICENSE_AGREEMENT.md).  
 
 
 
@@ -11,7 +11,8 @@ By submitting code as an entity you agree to the
 
 ## Contribute to Project
 
-Thank you for your interest in contributing to RepoSeed. This guide helps make contributing to RepoSeed simple and efficient for everyone.
+Thank you for your interest in contributing to RepoSeed.  
+This guide helps make contributing to RepoSeed simple and efficient for everyone.
 
 ### First contribution
 
@@ -55,7 +56,10 @@ Inactive issues or pull/merge requests may be closed after a specific period. Th
 
 ### Pull Request/Merge Request Guidelines
 
-Please keep the change in a single pull/merge request **as small as possible**. If you want to contribute a large feature think very hard what the minimum viable change is. The smaller a pull/merge request is the more likely it is it will be merged (quickly). Afterwards follow-up requests for enhancements are appreciated.
+Please keep the change in a single pull/merge request **as small as possible**.  
+If you want to contribute a large feature think very hard what the minimum viable change is.  
+The smaller a pull/merge request is the more likely it is it will be merged (quickly).  
+Afterwards follow-up requests for enhancements are appreciated.  
 
 ### Contribution Acceptance Criteria
 
