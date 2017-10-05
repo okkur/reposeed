@@ -1,4 +1,5 @@
 __[v0.1.0](#v010)__
+  - [Downloads for v0.1.0](https://github.com/okkur/reposeed/releases/tag/v0.1.0)
   - [Changelog since v0.0.0](#changelog-since-v000)
 
 # v0.1.0
