@@ -6,7 +6,7 @@ __[v0.1.0](#v010)__
 _2017-10-04_
 [Documentation](/docs)
 
-## Changes since v0.1.0
+## Changes since v0.0.0
   - CLA files
   - Licenses
   - Base README with logo
