@@ -9,7 +9,7 @@ _2017-10-10_
 [Documentation](/docs)
 
 
-## Changes since v0.4.0
+## Changes since v0.1.0
   - CLA files
   - Licenses
   - Base README with logo
@@ -22,5 +22,5 @@ _2017-10-10_
   - Version
   - Vision structure
 
-## Fixes since v0.4.0
+## Fixes since v0.1.0
   - Fix 123
