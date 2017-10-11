@@ -16,7 +16,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"html/template"
+	"text/template"
 	"io/ioutil"
 	"log"
 	"os"

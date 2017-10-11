@@ -15,7 +15,7 @@ Our detailed items:
 
 ## Core Concept
 
-Reposeed&#39;s core concept is to provide a basic selection of useful templates. With the help of a configuration file and a small substitution engine the project generates a seed layer for new open source repositories.
+Reposeed's core concept is to provide a basic selection of useful templates. With the help of a configuration file and a small substitution engine the project generates a seed layer for new open source repositories.
 
 
 

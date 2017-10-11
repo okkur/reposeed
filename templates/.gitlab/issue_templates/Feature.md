@@ -1,5 +1,5 @@
-<!-- This form is for feature requests ONLY! 
-
+<!--
+This form is for feature requests ONLY!  
 If you're looking for help check out [our support guidelines](/SUPPORT.md){{ with .SupportLinks.Troubleshooting }} and the [troubleshooting guide]({{ . }}).{{ else }}.{{ end }}
 -->
 /kind feature

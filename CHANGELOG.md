@@ -8,10 +8,12 @@ _2017_
 ## Documentation for v0.2.0
 [Documentation](/tree/v0.2.0/docs)
 
-## Changes since v0.0.0
-  - 
+## Changes since v0.1.0
+  - Example LICENSE
+  - LICENSE headers used in READMEs
 
-## Fixes since v0.0.0
+## Fixes since v0.1.0
+  - Comments not being parsed
   - Fix changelog
 -->
 
