@@ -1,12 +1,15 @@
-__[v0.1.0](#v010)__
-  - [Downloads for v0.1.0](https://github.com/okkur/reposeed/releases/tag/v0.1.0)
-  - [Changelog since v0.0.0](#changelog-since-v000)
-
 # v0.1.0
-_2017-10-04_
+_2017-10-10_
+  - [Downloads for v0.1.0](https://github.com/okkur/reposeed/releases/tag/v0.1.0)
+  - [Changelog since v0.0.0](#changes-since-v000)
+  - [Documentation for v0.1.0](#documentation-for-v010)
+
+
+## Documentation for v0.1.0
 [Documentation](/docs)
 
-## Changes since v0.0.0
+
+## Changes since v0.4.0
   - CLA files
   - Licenses
   - Base README with logo
@@ -18,3 +21,6 @@ _2017-10-04_
   - Bug and PR templates
   - Version
   - Vision structure
+
+## Fixes since v0.4.0
+  - Fix 123

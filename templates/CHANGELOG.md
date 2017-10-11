@@ -17,6 +17,6 @@ _2017-01-01_
 ## Changes since v0.4.0
   - Feature X
   - Feature Z
-    
+
 ## Fixes since v0.4.0
   - Fix 123
