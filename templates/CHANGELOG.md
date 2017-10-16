@@ -15,9 +15,9 @@ file | sha1 hash | md5 hash
 
 {{ with .SupportLinks.Examples }}[Examples]({{ . }}){{ end }}
 
-## Changes since v0.1.0
+## Changes since v0.0.0
   - Feature X
   - Feature Z
 
-## Fixes since v0.1.0
+## Fixes since v0.0.0
   - Fix 123
