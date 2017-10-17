@@ -11,6 +11,7 @@ _2017_
 ## Changes since v0.2.0
 
 ## Fixes since v0.2.0
+  - Whitespace improvements
 -->
 
 # v0.2.0
