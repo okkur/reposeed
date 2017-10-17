@@ -10,6 +10,8 @@ project:
     By contrast, most software carries fine print that denies users these basic rights, leaving them susceptible to the whims of its owners.
   # required
   version: "v0.0.0"
+  mainLicense: "apache2" # creativeCommonsBySa or apache2 - default: apache2
+  docsLicense: "creativeCommonsBySa" # creativeCommonsBySa - default: creativeCommonsBySa
 
 vision:
   type: "personal" # personal is the default.

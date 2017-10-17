@@ -34,6 +34,8 @@ type config struct {
 		Image       string `yaml:"image,omitempty"`
 		Website     string `yaml:"website,omitempty"`
 		Version     string `yaml:"version,omitempty"`
+		MainLicense string `yaml:"mainLicense,omitempty"`
+		DocsLicense string `yaml:"docsLicense,omitempty"`
 	} `yaml:"project"`
 	Vision struct {
 		Type     string   `yaml:"type"`
