@@ -11,13 +11,13 @@ Our detailed items:
 
 {{ with .Vision.Concept }}
 ## Core Concept
-  {{ . -}}
+{{- . -}}
 {{ end -}}
 
 {{ "" }}
 {{ with .Vision.Aim }}
 ## General Aim
-  {{ . -}}
+{{ . -}}
 {{ end }}
 
 ## Communication

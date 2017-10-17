@@ -14,14 +14,16 @@
   {{- printf " [![%s](%s)](%s)" .Alt .Image .Link -}}
 {{ end }}
 
-{{ if eq .Project.State "beta" }}
+{{ "" }}
+{{- if eq .Project.State "beta" }}
   {{- printf "**NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.**" -}}
 {{ end }}
 
-{{ if eq .Project.State "unstable" -}}
+{{- if eq .Project.State "unstable" -}}
   {{- printf "**NOTE: This is a work-in-progress, we do not consider it production ready. Use at your own risk.**" -}}
 {{ end }}
 
+{{ "" }}
 {{- printf "# %s" .Project.Name }}
 {{ .Project.Description -}}
 
