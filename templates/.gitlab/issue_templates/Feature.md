@@ -1,8 +1,13 @@
 <!--
 This form is for feature requests ONLY!  
-If you're looking for help check out [our support guidelines](/SUPPORT.md){{ with .SupportLinks.Troubleshooting }} and the [troubleshooting guide]({{ . }}).{{ else }}.{{ end }}
+If you're looking for help check out [our support guidelines](/SUPPORT.md)
+{{- with .SupportLinks.Troubleshooting -}}
+  {{- printf " and the [troubleshooting guide](%s)." . -}}
+{{ else }}
+  {{- printf "." -}}
+{{ end }}
 -->
-/kind feature
+**Feature request**
 
 **What this feature does / why we need it**:
 

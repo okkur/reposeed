@@ -12,7 +12,6 @@ file | sha1 hash | md5 hash
 
 ## Documentation for v0.1.0
 {{ with .SupportLinks.Documentation }}[Documentation]({{ . }}){{ end }}
-
 {{ with .SupportLinks.Examples }}[Examples]({{ . }}){{ end }}
 
 ## Changes since v0.0.0

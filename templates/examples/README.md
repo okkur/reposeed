@@ -1,5 +1,11 @@
 <!--
-Copyright {{ .Copyright.Year }} - {{ with .Copyright.Owner }}{{ . }}{{ else }}The {{ .Project.Name }} Authors{{ end }}
+{{ if .Copyright.Owner -}}
+  {{- $owner := .Copyright.Owner -}}
+  {{ printf "Copyright %s - %s" .Copyright.Year $owner }}
+{{- else -}}
+  {{- $owner := "output" | printf "The %s Authors" .Project.Name -}}
+  {{ printf "Copyright %s - %s" .Copyright.Year $owner }}
+{{ end }}
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License;
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at

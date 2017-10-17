@@ -1,34 +1,39 @@
-{{ if .Project.Image }}
-{{ if .Project.Website }}
-<a href="{{ .Project.Website }}"><img src="{{ .Project.Image }}" width="500"/></a>
-{{ else }}
-<img src="{{ .Project.Image }}" width="500"/>
-{{ end }}
-{{ else }}
+{{- if .Project.Image -}}
+  {{- if .Project.Website -}}
+    {{- printf "<a href='%s'><img src='%s' width='500'/></a>" .Project.Website .Project.Image -}}
+  {{- else -}}
+    {{- printf "<img src='%s' width='500'/>" .Project.Image -}}
+  {{- end -}}
+{{- else -}}
 # {{ .Project.Name }}
 {{ end }}
 
 {{ .Project.OneLiner }}
 
-{{ range .Badges }} [![{{ .Alt }}]({{ .Image }})]({{ .Link }}){{ end }}
-
-{{ if eq .Project.State "beta" }}**NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.**{{ end }}
-{{ if eq .Project.State "unstable" }}**NOTE: This is a work-in-progress, we do not consider it production ready. Use at your own risk.**{{ end }}
-
-
-# {{ .Project.Name }}
-{{ .Project.Description }}
-
-
-## Using {{ .Project.Name }}
-
-{{ with .Readme.UsageExample }}
-  {{ . }}
+{{ range .Badges }}
+  {{- printf " [![%s](%s)](%s)" .Alt .Image .Link -}}
 {{ end }}
 
-{{ with .SupportLinks.Documentation }}
+{{ if eq .Project.State "beta" }}
+  {{- printf "**NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.**" -}}
+{{ end }}
+
+{{ if eq .Project.State "unstable" -}}
+  {{- printf "**NOTE: This is a work-in-progress, we do not consider it production ready. Use at your own risk.**" -}}
+{{ end }}
+
+{{- printf "# %s" .Project.Name }}
+{{ .Project.Description -}}
+
+{{ "" }}
+{{ printf "## Using %s" .Project.Name }}
+{{ with .Readme.UsageExample -}}
+  {{- . -}}
+{{- end -}}
+
+{{- with .SupportLinks.Documentation -}}
 Take a look at our full [documentation]({{ . }}).
-{{ end }}
+{{- end }}
 
 ## Support
 For detailed information on support options see our [support guide](/SUPPORT.md).
@@ -45,4 +50,10 @@ Best place to start is our [contribution guide](/CONTRIBUTING.md).
 
 ---
 
-Copyright {{ .Copyright.Year }} - {{ with .Copyright.Owner }}{{ . }}{{ else }} The {{ .Project.Name }} Authors{{ end }}
+{{ if .Copyright.Owner -}}
+  {{- $owner := .Copyright.Owner -}}
+  {{ printf "Copyright %s - %s" .Copyright.Year $owner }}
+{{- else -}}
+  {{- $owner := "output" | printf "The %s Authors" .Project.Name -}}
+  {{ printf "Copyright %s - %s" .Copyright.Year $owner }}
+{{ end }}

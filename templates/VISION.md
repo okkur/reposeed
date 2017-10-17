@@ -1,25 +1,23 @@
 # Vision
-
 {{ .Project.Name }} is a {{ with .Vision.Type }}{{ . }}{{ else }}personal{{ end }} project. From our current viewpoint, its role is:
-
 {{ .Vision.Overview }}
 
-{{ with .Vision.Items }}Our detailed items:
-{{ range . }}* {{ . }}
-{{ end }}{{ end }}
+{{- with .Vision.Items }}
+Our detailed items:
+  {{ range . -}}
+    * {{ . }}
+{{ end -}}
+{{- end -}}
 
 {{ with .Vision.Concept }}
 ## Core Concept
+  {{ . -}}
+{{ end -}}
 
-{{ . }}
-
-{{ end }}
-
+{{ "" }}
 {{ with .Vision.Aim }}
 ## General Aim
-
-{{ . }}
-
+  {{ . -}}
 {{ end }}
 
 ## Communication

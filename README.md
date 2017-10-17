@@ -1,8 +1,4 @@
-
-
-<img src="https://github.com/okkur/reposeed/blob/master/media/logo.svg" width="500"/>
-
-
+<img src='https://github.com/okkur/reposeed/blob/master/media/logo.svg' width='500'/>
 
 Create your next open source repository with batteries included
 
@@ -10,18 +6,12 @@ Create your next open source repository with batteries included
 
 **NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.**
 
-
-
 # RepoSeed
 Start with the base layer necessary to focus on your project and not on the repository.  
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
-
-
 ## Using RepoSeed
-
-
-  ```
+```
 git clone https://github.com/okkur/reposeed.git  
 mkdir YOUR-PROJECT
 cp reposeed/templates/seed-config.example.yaml YOUR-PROJECT/.seed-config.yaml
@@ -30,12 +20,7 @@ Change .seed-config.yaml to your needs.
 ```
 go run reposeed/cmd/generator.go --conf=YOUR-PROJECT/.seed-config.yaml --input=reposeed/templates --output=YOUR-PROJECT
 ```
-
-
-
-
 Take a look at our full [documentation](/docs).
-
 
 ## Support
 For detailed information on support options see our [support guide](/SUPPORT.md).
