@@ -8,11 +8,10 @@ Our detailed items:
 * Additions to reposeed only accepted for generic usage
 * Specific additions should be added to the files after generation
 
-## Core Concept
-  Reposeed's core concept is to provide a basic selection of useful templates. With the help of a configuration file and a small substitution engine the project generates a seed layer for new open source repositories.
+## Core ConceptReposeed's core concept is to provide a basic selection of useful templates. With the help of a configuration file and a small substitution engine the project generates a seed layer for new open source repositories.
 
 ## General Aim
-  Our aim is to provide a sufficient base to built a new open source project on top of. Reducing the burden for maintainers and decreasing the hurdles to get started.
+Our aim is to provide a sufficient base to built a new open source project on top of. Reducing the burden for maintainers and decreasing the hurdles to get started.
 
 ## Communication
 A lot of discussion about RepoSeed happens within Github issues. Ideally, we will keep it that way until RepoSeed becomes big enough that this turns into a problem. The advantages of this is that all documentation and issues are publicly searchable and easily linked to the source code.
