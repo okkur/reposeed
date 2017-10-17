@@ -9,6 +9,7 @@ _2017_
 [Documentation](/tree/v0.3.0/docs)
 
 ## Changes since v0.2.0
+  - Possibility to use creative commons license as main license
 
 ## Fixes since v0.2.0
   - Whitespace improvements
