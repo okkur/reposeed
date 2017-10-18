@@ -10,6 +10,7 @@ _2017_
 
 ## Changes since v0.2.0
   - Possibility to use creative commons license as main license
+  - Mian licence option for MIT GPLv3 AGPLv3
 
 ## Fixes since v0.2.0
   - Whitespace improvements
