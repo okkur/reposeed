@@ -11,9 +11,11 @@ project:
   # required
   version: "v0.0.0"
   mainLicense: "apache2" # default: apache2
-    # creativeCommonsBy creativeCommonsSa creativeCommonsBySa creativeCommonsByNcSa creativeCommons0
-  docsLicense: "creativeCommonsBySa" # default: creativeCommonsBySa
-    # creativeCommonsBy creativeCommonsSa creativeCommonsBySa creativeCommonsByNcSa creativeCommons0
+    # Creative Commons: CCBy CCSa CCBySa CCByNcSa CC0
+    # GPL: GPLv3 AGPLv3
+    # Other: Apache2 MIT
+  docsLicense: "CCBySa" # default: CCBySa
+    # Creative Commons: CCBy CCSa CCBySa CCByNcSa CC0
 
 vision:
   type: "personal" # personal is the default.
