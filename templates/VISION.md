@@ -11,7 +11,7 @@ Our detailed items:
 
 {{ with .Vision.Concept }}
 ## Core Concept
-{{- . -}}
+{{ . -}}
 {{ end -}}
 
 {{ "" }}
