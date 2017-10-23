@@ -14,6 +14,9 @@ _2017_
 
 ## Fixes since v0.2.0
   - Whitespace improvements
+
+---
+
 -->
 
 # v0.2.0
@@ -32,6 +35,8 @@ _2017-10-12_
 ## Fixes since v0.1.0
   - Comments not being parsed
   - Fix changelog
+
+---
 
 # v0.1.0
 _2017-10-10_
