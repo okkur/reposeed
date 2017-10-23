@@ -14,6 +14,7 @@ _2017_
 
 ## Fixes since v0.2.0
   - Whitespace improvements
+  - Whitespace in VISION
 
 ---
 
