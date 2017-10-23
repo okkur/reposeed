@@ -7,7 +7,6 @@
 {{- else -}}
 # {{ .Project.Name }}
 {{ end }}
-
 {{ .Project.OneLiner }}
 
 {{ range .Badges }}
@@ -24,7 +23,9 @@
 {{ end }}
 
 {{ "" }}
+{{- if .Project.Image -}}
 {{- printf "# %s" .Project.Name }}
+{{ end -}}
 {{ .Project.Description -}}
 
 {{ "" }}

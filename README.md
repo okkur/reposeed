@@ -1,5 +1,4 @@
 <img src='https://github.com/okkur/reposeed/blob/master/media/logo.svg' width='500'/>
-
 Create your next open source repository with batteries included
 
  [![state](https://img.shields.io/badge/state-beta-blue.svg)]() [![release](https://img.shields.io/github/release/okkur/reposeed.svg)](https://github.com/okkur/reposeed/releases) [![license](https://img.shields.io/github/license/okkur/reposeed.svg)](LICENSE)
