@@ -1,4 +1,4 @@
-<--
+<!--
 # v0.3.0
 _2017_
   - [Downloads for v0.3.0](https://github.com/okkur/reposeed/releases/tag/v0.3.0)
@@ -15,6 +15,7 @@ _2017_
 ## Fixes since v0.2.0
   - Whitespace improvements
   - Whitespace in VISION
+  - Fix LICENSE Templates
 
 ---
 

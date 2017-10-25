@@ -6,7 +6,8 @@
   {{- end -}}
 {{- else -}}
 # {{ .Project.Name }}
-{{ end }}
+{{- end }}
+{{ "" }}
 {{ .Project.OneLiner }}
 
 {{ range .Badges }}
@@ -46,15 +47,15 @@ Best place to start is our [contribution guide](/CONTRIBUTING.md).
 
 ----
 
-{{ if eq .Project.MainLicense "creativeCommonsBy" }}
+{{ if eq .Project.MainLicense "CCBy" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "Creative Commons BY 4.0") }}
-{{ else if eq .Project.MainLicense "creativeCommonsSa" }}
+{{ else if eq .Project.MainLicense "CCSa" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "Creative Commons SA 4.0") }}
-{{ else if eq .Project.MainLicense "creativeCommonsBySa" }}
+{{ else if eq .Project.MainLicense "CCBySa" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "Creative Commons BY-SA 4.0") }}
-{{ else if eq .Project.MainLicense "creativeCommonsByNcSa" }}
+{{ else if eq .Project.MainLicense "CCByNcSa" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "Creative Commons BY-NC-SA 4.0") }}
-{{ else if eq .Project.MainLicense "creativeCommons0" }}
+{{ else if eq .Project.MainLicense "CC0" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "Creative Commons CC0 1.0") }}
 {{ else }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "Apache License, Version 2.0") }}
@@ -62,13 +63,13 @@ Best place to start is our [contribution guide](/CONTRIBUTING.md).
 
 {{ if eq .Project.DocsLicense "apache2" }}
   {{- printf "*Documentation/examples are licensed under [%s](/docs/LICENSE).* " (print "Apache License, Version 2.0") }}
-{{ else if eq .Project.MainLicense "creativeCommonsBy" }}
+{{ else if eq .Project.MainLicense "CCBy" }}
   {{- printf "*Documentation/examples are licensed under [%s](/docs/LICENSE).*  " (print "Creative Commons BY 4.0") }}
-{{ else if eq .Project.MainLicense "creativeCommonsSa" }}
+{{ else if eq .Project.MainLicense "CCSa" }}
   {{- printf "*Documentation/examples are licensed under [%s](/docs/LICENSE).*  " (print "Creative Commons SA 4.0") }}
-{{ else if eq .Project.MainLicense "creativeCommonsByNcSa" }}
+{{ else if eq .Project.MainLicense "CCByNcSa" }}
   {{- printf "*Documentation/examples are licensed under [%s](/docs/LICENSE).*  " (print "Creative Commons BY-NC-SA 4.0") }}
-{{ else if eq .Project.MainLicense "creativeCommons0" }}
+{{ else if eq .Project.MainLicense "CC0" }}
   {{- printf "*Documentation/examples are licensed under [%s](/docs/LICENSE).*  " (print "Creative Commons CC0 1.0") }}
 {{ else }}
   {{- printf "*Documentation/examples are licensed under [%s](/docs/LICENSE).*  " (print "Creative Commons BY-SA 4.0") }}
