@@ -1,4 +1,21 @@
 <!--
+# v0.4.0
+_2017_
+  - [Downloads for v0.4.0](https://github.com/okkur/reposeed/releases/tag/v0.4.0)
+  - [Changelog since v0.3.0](#changes-since-v030)
+  - [Documentation for v0.4.0](#documentation-for-v040)
+
+## Documentation for v0.4.0
+[Documentation](/tree/v0.4.0/docs)
+
+## Changes since v0.3.0
+
+## Fixes since v0.3.0
+
+---
+
+-->
+
 # v0.3.0
 _2017_
   - [Downloads for v0.3.0](https://github.com/okkur/reposeed/releases/tag/v0.3.0)
@@ -10,7 +27,7 @@ _2017_
 
 ## Changes since v0.2.0
   - Possibility to use creative commons license as main license
-  - Mian licence option for MIT GPLv3 AGPLv3
+  - Main licence option for MIT GPLv3 AGPLv3
 
 ## Fixes since v0.2.0
   - Whitespace improvements
@@ -18,8 +35,6 @@ _2017_
   - Fix LICENSE Templates
 
 ---
-
--->
 
 # v0.2.0
 _2017-10-12_
