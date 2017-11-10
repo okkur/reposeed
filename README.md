@@ -9,15 +9,17 @@ Create your next open source repository with batteries included
 Start with the base layer necessary to focus on your project and not on the repository.  
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
+Make sure that `$GOPATH/bin` is in your `$PATH` for the following commands.
+
 ## Using RepoSeed
 ```
-git clone https://github.com/okkur/reposeed.git  
+go get -v -u github.com/okkur/reposeed/cmd/reposeed/...
 mkdir YOUR-PROJECT
 cp reposeed/templates/seed-config.example.yaml YOUR-PROJECT/.seed-config.yaml
 ```  
 Change .seed-config.yaml to your needs.
 ```
-go run reposeed/cmd/generator.go --conf=YOUR-PROJECT/.seed-config.yaml --input=reposeed/templates --output=YOUR-PROJECT
+reposeed --conf=YOUR-PROJECT/.seed-config.yaml --input=reposeed/templates --output=YOUR-PROJECT
 ```
 Take a look at our full [documentation](/docs).
 
