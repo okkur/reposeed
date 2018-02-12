@@ -20,10 +20,9 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"strings"
 	"text/template"
 
-	"github.com/erbesharat/reposeed/templates"
+	"github.com/gobuffalo/packr"
 	"gopkg.in/yaml.v2"
 )
 
@@ -160,23 +159,21 @@ func main() {
 	flag.Parse()
 
 	config := parseConfig(conf)
-	templatesName, _ := templates.AssetDir("templates")
+	box := packr.NewBox("../../templates")
+	templatesName := box.List()
 	bl := make(map[string]bool)
 	bl["seed-config.example.yaml"] = true
 
 	for _, templateName := range templatesName {
-		file, _ := templates.AssetInfo("templates/" + templateName)
-		fileContent := templates.MustAsset("templates/" + templateName)
-		if bl[file.Name()] {
+		file, _ := box.Open(templateName)
+		fileStat, _ := file.Stat()
+		fileContent := box.Bytes(templateName)
+		if bl[fileStat.Name()] {
 			log.Println(filepath.SkipDir)
 		}
-		if !file.IsDir() {
-			var newPath string
-			if outputDir != "" {
-				fileName := strings.Split(file.Name(), "/")
-				newPath = filepath.Join(outputDir, fileName[1])
-			}
-			err := generateFile(config, fileContent, newPath, overwrite)
+
+		if !fileStat.IsDir() {
+			err := generateFile(config, fileContent, templateName, overwrite)
 			if err != nil {
 				log.Println(err)
 			}
