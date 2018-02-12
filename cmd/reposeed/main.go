@@ -16,12 +16,13 @@ package main
 import (
 	"flag"
 	"fmt"
-	"text/template"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
+	"text/template"
 
+	"github.com/gobuffalo/packr"
 	"gopkg.in/yaml.v2"
 )
 
@@ -105,12 +106,17 @@ func parseConfig(path string) config {
 	return conf
 }
 
-func generateFile(config config, path string, newPath string, overwrite bool) error {
-	temp, err := template.ParseFiles(path)
-	if err != nil {
-		return fmt.Errorf("unable to parse file: %s", err)
-	}
+func generateFile(config config, fileContent []byte, newPath string, overwrite bool) error {
 
+	// Create a temporary file based on fileContent
+	tmpfile, err := ioutil.TempFile("", "template")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer os.Remove(tmpfile.Name())
+	if _, err := tmpfile.Write(fileContent); err != nil {
+		log.Fatal(err)
+	}
 	if _, e := os.Stat(newPath); os.IsNotExist(e) {
 		os.MkdirAll(filepath.Dir(newPath), os.ModePerm)
 	}
@@ -127,19 +133,25 @@ func generateFile(config config, path string, newPath string, overwrite bool) er
 		return fmt.Errorf("unable to create file: %s", err)
 	}
 
+	temp, err := template.ParseFiles(tmpfile.Name())
+	if err != nil {
+		return fmt.Errorf("unable to parse file: %s", err)
+	}
+
 	err = temp.Execute(file, config)
 	if err != nil {
 		return fmt.Errorf("unable to parse template: %s", err)
+	}
+	if err := tmpfile.Close(); err != nil {
+		log.Fatal(err)
 	}
 
 	return nil
 }
 
 func main() {
-	var tempDir, outputDir, conf string
+	var outputDir, conf string
 	var overwrite bool
-
-	flag.StringVar(&tempDir, "input", "templates", "Template directory")
 	flag.StringVar(&outputDir, "output", "", "Output directory")
 	flag.StringVar(&conf, "conf", ".seed-config.yaml", "Config file")
 	flag.BoolVar(&overwrite, "overwrite", false, "Force overwrite files")
@@ -147,28 +159,24 @@ func main() {
 	flag.Parse()
 
 	config := parseConfig(conf)
-	tempDir, _ = filepath.Abs(tempDir)
-
+	box := packr.NewBox("../../templates")
+	templatesName := box.List()
 	bl := make(map[string]bool)
 	bl["seed-config.example.yaml"] = true
 
-	filepath.Walk(tempDir, func(path string, info os.FileInfo, err error) error {
-		if bl[info.Name()] {
-			return filepath.SkipDir
+	for _, templateName := range templatesName {
+		file, _ := box.Open(templateName)
+		fileStat, _ := file.Stat()
+		fileContent := box.Bytes(templateName)
+		if bl[fileStat.Name()] {
+			log.Println(filepath.SkipDir)
 		}
 
-		if !info.IsDir() {
-			relPath, _ := filepath.Rel(tempDir, path)
-			newPath := relPath
-			if outputDir != "" {
-				newPath = filepath.Join(outputDir, relPath)
-			}
-			err := generateFile(config, path, newPath, overwrite)
+		if !fileStat.IsDir() {
+			err := generateFile(config, fileContent, templateName, overwrite)
 			if err != nil {
 				log.Println(err)
 			}
 		}
-
-		return nil
-	})
+	}
 }

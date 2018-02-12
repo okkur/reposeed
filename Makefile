@@ -13,7 +13,7 @@ SRC = $(shell find ./cmd/reposeed -type f -name '*.go' -not -path "./vendor/*")
 all: check install
 
 $(TARGET): $(SRC)
-	@go build -o $(TARGET)
+	@packr build -o $(TARGET)
 
 build: $(TARGET)
 	@true
@@ -22,7 +22,7 @@ clean:
 	@rm -f $(TARGET)
 
 install:
-	@go install ./cmd/reposeed
+	@packr install ./cmd/reposeed
 
 uninstall: clean
 	@rm -f $$(which ${TARGET})
@@ -37,6 +37,9 @@ check:
 	@test -z $(shell gofmt -l ./cmd/reposeed/main.go | tee /dev/stderr) || echo "[WARN] Fix formatting issues with 'make fmt'"
 	@for d in $$(go list ./... | grep -v /vendor/); do golint $${d}; done
 	@go tool vet ${SRC}
+
+packr:
+	@go get -u github.com/gobuffalo/packr/...
 
 run: install
 	@$(TARGET)
