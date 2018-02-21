@@ -15,6 +15,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
+{{ "" }}
+{{ printf "## Development" }}
+{{ with .Docs.Development -}}
+  {{- . -}}
+{{- end -}}
+
 # Documentation
 
 No documentation available yet. Start your first contribution with some documentation.
