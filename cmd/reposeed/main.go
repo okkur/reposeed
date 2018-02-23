@@ -93,9 +93,18 @@ func main() {
 	flag.BoolVar(&overwrite, "overwrite", false, "Force overwrite files")
 
 	flag.Parse()
+	box := packr.NewBox("../../templates")
+
+	// Commands
+	if os.Args[1] == "init" {
+		seedString := box.String("seed-config.example.yaml")
+		file, _ := os.Create(os.Args[2] + "/.seed-config.yaml")
+		defer file.Close()
+		file.WriteString(seedString)
+		os.Exit(1)
+	}
 
 	config := parseConfig(conf)
-	box := packr.NewBox("../../templates")
 	templatesName := box.List()
 	bl := make(map[string]bool)
 	bl["seed-config.example.yaml"] = true
