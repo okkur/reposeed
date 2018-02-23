@@ -1,0 +1,12 @@
+language: go
+
+go:
+  - 1.8.x
+  - 1.9.x
+
+before_install:
+  - make packr
+  - npm install -g alex
+
+script:
+  - alex --diff
