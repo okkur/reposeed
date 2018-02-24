@@ -11,12 +11,14 @@ Start with the base layer necessary to focus on your project and not on the repo
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 ## Using RepoSeed
-Make sure that `$GOPATH/bin` is in your `$PATH` for the following commands.
 ```
 go get -v -u github.com/okkur/reposeed/cmd/reposeed/...
 mkdir YOUR-PROJECT
-cp $GOPATH/src/github.com/okkur/reposeed/templates/seed-config.example.yaml YOUR-PROJECT/.seed-config.yaml
 ```  
+Run the following command to create the sample .seed-config.yaml file.
+```
+reposeed init YOUR-PROJECT
+```
 Change .seed-config.yaml to your needs.
 ```
 reposeed --conf=YOUR-PROJECT/.seed-config.yaml --output=YOUR-PROJECT
