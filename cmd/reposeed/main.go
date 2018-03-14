@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/gobuffalo/packr"
 	"github.com/okkur/reposeed/cmd/reposeed/config"
-	"gopkg.in/yaml.v2"
+	templates "github.com/okkur/reposeed/cmd/reposeed/templates"
+	yaml "gopkg.in/yaml.v2"
 )
 
 func parseConfig(path string) config.Config {
@@ -93,7 +93,7 @@ func main() {
 	flag.BoolVar(&overwrite, "overwrite", false, "Force overwrite files")
 
 	flag.Parse()
-	box := packr.NewBox("../../templates")
+	box := templates.GetTemplates()
 
 	// Commands
 	if os.Args[1] == "init" {
