@@ -1,29 +1,51 @@
 <!--
+# v0.5.0
+_2018_
+  - [Downloads for v0.5.0](https://github.com/okkur/reposeed/releases/tag/v0.5.0)
+  - [Changelog since v0.4.0](#changes-since-v040)
+  - [Documentation for v0.5.0](#documentation-for-v050)
+
+## Documentation for v0.5.0
+[Documentation](/docs)
+
+## Changes since v0.4.0
+
+## Fixes since v0.4.0
+
+---
+
+-->
+
 # v0.4.0
-_2017_
+_2018-04-06_
   - [Downloads for v0.4.0](https://github.com/okkur/reposeed/releases/tag/v0.4.0)
   - [Changelog since v0.3.0](#changes-since-v030)
   - [Documentation for v0.4.0](#documentation-for-v040)
 
 ## Documentation for v0.4.0
-[Documentation](/tree/v0.4.0/docs)
+[Documentation](/docs)
 
 ## Changes since v0.3.0
+  - `init` subcommand
+  - Embed template files via packr
+  - Enable installation via `go get`
+  - Extended makefile
 
 ## Fixes since v0.3.0
+  - Iterate on templates
 
 ---
 
 -->
 
 # v0.3.0
-_2017_
+_2017-10-28_
   - [Downloads for v0.3.0](https://github.com/okkur/reposeed/releases/tag/v0.3.0)
   - [Changelog since v0.2.0](#changes-since-v020)
   - [Documentation for v0.3.0](#documentation-for-v030)
 
 ## Documentation for v0.3.0
-[Documentation](/tree/v0.3.0/docs)
+[Documentation](/docs)
 
 ## Changes since v0.2.0
   - Possibility to use creative commons license as main license
@@ -43,7 +65,7 @@ _2017-10-12_
   - [Documentation for v0.2.0](#documentation-for-v020)
 
 ## Documentation for v0.2.0
-[Documentation](/tree/v0.2.0/docs)
+[Documentation](/docs)
 
 ## Changes since v0.1.0
   - Example LICENSE
@@ -62,7 +84,7 @@ _2017-10-10_
   - [Documentation for v0.1.0](#documentation-for-v010)
 
 ## Documentation for v0.1.0
-[Documentation](/tree/v0.1.0/docs)
+[Documentation](/docs)
 
 ## Changes since v0.0.0
   - CLA files
