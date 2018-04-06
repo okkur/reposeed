@@ -36,8 +36,6 @@ _2018-04-06_
 
 ---
 
--->
-
 # v0.3.0
 _2017-10-28_
   - [Downloads for v0.3.0](https://github.com/okkur/reposeed/releases/tag/v0.3.0)
