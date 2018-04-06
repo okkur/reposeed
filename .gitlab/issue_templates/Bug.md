@@ -13,5 +13,5 @@ If you're looking for help check out [our support guidelines](/SUPPORT.md).
 **Anything else we need to know?**:
 
 **Environment**:
-- RepoSeed version:  
+- Reposeed version:  
 - Others:

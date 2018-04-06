@@ -1,24 +1,26 @@
 <img src='https://github.com/okkur/reposeed/blob/master/media/logo.svg' width='500'/>
 
-Create your next open source repository with batteries included
+Extensive repository base files up and running in an instant
 
  [![state](https://img.shields.io/badge/state-beta-blue.svg)]() [![release](https://img.shields.io/github/release/okkur/reposeed.svg)](https://github.com/okkur/reposeed/releases) [![license](https://img.shields.io/github/license/okkur/reposeed.svg)](LICENSE)
 
 **NOTE: This is a beta release, we do not consider it completely production ready yet. Use at your own risk.**
 
-# RepoSeed
+# Reposeed
 Start with the base layer necessary to focus on your project and not on the repository.  
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
-## Using RepoSeed
+## Using Reposeed
 ```
 go get -v -u github.com/okkur/reposeed/cmd/reposeed/...
 mkdir YOUR-PROJECT
-```  
+```
+
 Run the following command to create the sample .seed-config.yaml file.
 ```
 reposeed init YOUR-PROJECT
 ```
+
 Change .seed-config.yaml to your needs.
 ```
 reposeed --conf=YOUR-PROJECT/.seed-config.yaml --output=YOUR-PROJECT

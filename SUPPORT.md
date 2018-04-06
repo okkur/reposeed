@@ -1,6 +1,6 @@
-# Support using RepoSeed
+# Support using Reposeed
 
-Welcome to RepoSeed! We use Github for tracking bugs and feature requests.
+Welcome to Reposeed! We use Github for tracking bugs and feature requests.
 There are helpful volunteers who may be able to help you.
 
 If it happens that you know the solution to an existing bug, please first open the issue in order to keep track of it.
