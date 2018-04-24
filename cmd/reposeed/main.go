@@ -43,6 +43,9 @@ func parseConfig(path string) config.Config {
 }
 
 func generateFile(config config.Config, fileContent []byte, newPath string, overwrite bool, output string) error {
+	if output != "" {
+		newPath = output + "/" + newPath
+	}
 
 	// Create a temporary file based on fileContent
 	tmpfile, err := ioutil.TempFile("", "template")
@@ -53,17 +56,17 @@ func generateFile(config config.Config, fileContent []byte, newPath string, over
 	if _, err := tmpfile.Write(fileContent); err != nil {
 		log.Fatal(err)
 	}
-	if _, e := os.Stat(output + "/" + newPath); os.IsNotExist(e) {
-		os.MkdirAll(filepath.Dir(output+"/"+newPath), os.ModePerm)
+	if _, e := os.Stat(newPath); os.IsNotExist(e) {
+		os.MkdirAll(filepath.Dir(newPath), os.ModePerm)
 	}
 
 	if !overwrite {
-		if _, e := os.Stat(output + "/" + newPath); !os.IsNotExist(e) {
-			return fmt.Errorf("file %s not overwritten", output+"/"+newPath)
+		if _, e := os.Stat(newPath); !os.IsNotExist(e) {
+			return fmt.Errorf("file %s not overwritten", newPath)
 		}
 	}
 
-	file, err := os.Create(output + "/" + newPath)
+	file, err := os.Create(newPath)
 	defer file.Close()
 	if err != nil {
 		return fmt.Errorf("unable to create file: %s", err)
