@@ -118,9 +118,11 @@ func main() {
 		}
 
 		if !fileStat.IsDir() {
-			err := generateFile(config, fileContent, templateName, overwrite)
-			if err != nil {
-				log.Println(err)
+			if !bl[fileStat.Name()] {
+				err := generateFile(config, fileContent, templateName, overwrite)
+				if err != nil {
+					log.Println(err)
+				}
 			}
 		}
 	}
