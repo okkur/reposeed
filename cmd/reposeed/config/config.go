@@ -66,4 +66,7 @@ type Config struct {
 		IssueTemplate string `yaml:"issueTemplate,omitempty" json:"issueTemplate,omitempty"`
 		StarterIssues string `yaml:"starterIssues,omitempty" json:"starterIssues,omitempty"`
 	} `yaml:"contributionLinks" json:"contributionLinks"`
+	Reposeed struct {
+		ConfigVersion string `yaml:"configVersion,omitempty" json:"configVersion,omitempty"`
+	} `yaml:"reposeed" json:"reposeed"`
 }

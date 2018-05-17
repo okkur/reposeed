@@ -27,6 +27,8 @@ import (
 	yaml "gopkg.in/yaml.v2"
 )
 
+const SupportedConfigVersion = "v1"
+
 func parseConfig(path string) config.Config {
 	var conf config.Config
 
@@ -108,22 +110,27 @@ func main() {
 	templatesName := box.List()
 	bl := make(map[string]bool)
 	bl["seed-config.example.yaml"] = true
+	configVersion := config.Reposeed.ConfigVersion
 
-	for _, templateName := range templatesName {
-		file, _ := box.Open(templateName)
-		fileStat, _ := file.Stat()
-		fileContent := box.Bytes(templateName)
-		if bl[fileStat.Name()] {
-			log.Println(filepath.SkipDir)
-		}
+	if configVersion == SupportedConfigVersion {
+		for _, templateName := range templatesName {
+			file, _ := box.Open(templateName)
+			fileStat, _ := file.Stat()
+			fileContent := box.Bytes(templateName)
+			if bl[fileStat.Name()] {
+				log.Println(filepath.SkipDir)
+			}
 
-		if !fileStat.IsDir() {
-			if !bl[fileStat.Name()] {
-				err := generateFile(config, fileContent, templateName, overwrite)
-				if err != nil {
-					log.Println(err)
+			if !fileStat.IsDir() {
+				if !bl[fileStat.Name()] {
+					err := generateFile(config, fileContent, templateName, overwrite)
+					if err != nil {
+						log.Println(err)
+					}
 				}
 			}
 		}
+	} else {
+		log.Fatalf("Invalid config version. Currently supported versions: v1")
 	}
 }
