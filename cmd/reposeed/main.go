@@ -119,15 +119,16 @@ func main() {
 			fileContent := box.Bytes(templateName)
 			if bl[fileStat.Name()] {
 				log.Println(filepath.SkipDir)
+				continue
 			}
 
-			if !fileStat.IsDir() {
-				if !bl[fileStat.Name()] {
-					err := generateFile(config, fileContent, templateName, overwrite)
-					if err != nil {
-						log.Println(err)
-					}
-				}
+			if fileStat.IsDir() {
+				continue
+			}
+
+			err := generateFile(config, fileContent, templateName, overwrite)
+			if err != nil {
+				log.Println(err)
 			}
 		}
 	} else {
