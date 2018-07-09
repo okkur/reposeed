@@ -45,16 +45,6 @@ func parseConfig(path string) config.Config {
 }
 
 func generateFile(config config.Config, fileContent []byte, newPath string, overwrite bool) error {
-
-	// Create a temporary file based on fileContent
-	tmpfile, err := ioutil.TempFile("", "template")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer os.Remove(tmpfile.Name())
-	if _, err := tmpfile.Write(fileContent); err != nil {
-		log.Fatal(err)
-	}
 	if _, e := os.Stat(newPath); os.IsNotExist(e) {
 		os.MkdirAll(filepath.Dir(newPath), os.ModePerm)
 	}
@@ -66,12 +56,12 @@ func generateFile(config config.Config, fileContent []byte, newPath string, over
 	}
 
 	file, err := os.Create(newPath)
-	defer file.Close()
 	if err != nil {
 		return fmt.Errorf("unable to create file: %s", err)
 	}
+	defer file.Close()
 
-	temp, err := template.ParseFiles(tmpfile.Name())
+	temp, err := template.New("template").Parse(string(fileContent))
 	if err != nil {
 		return fmt.Errorf("unable to parse file: %s", err)
 	}
@@ -79,9 +69,6 @@ func generateFile(config config.Config, fileContent []byte, newPath string, over
 	err = temp.Execute(file, config)
 	if err != nil {
 		return fmt.Errorf("unable to parse template: %s", err)
-	}
-	if err := tmpfile.Close(); err != nil {
-		log.Fatal(err)
 	}
 
 	return nil
