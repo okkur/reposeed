@@ -1,11 +1,11 @@
 {{- if eq .Project.DocsLicense "creativeCommons0" -}}
-  {{template "examples/license-partials/creativeCommons0"}}
+  {{template "examples/license-partials/creativeCommons0" .}}
 {{- else if eq .Project.DocsLicense "creativeCommonsByNc" -}}
-  {{template "examples/license-partials/creativeCommonsByNc"}}
+  {{template "examples/license-partials/creativeCommonsByNc" .}}
 {{- else if eq .Project.DocsLicense "creativeCommonsBy" -}}
-  {{template "examples/license-partials/creativeCommonsBy"}}
+  {{template "examples/license-partials/creativeCommonsBy" .}}
 {{- else if eq .Project.DocsLicense "creativeCommonsByNcSa" -}}
-  {{template "examples/license-partials/creativeCommonsByNcSa"}}
+  {{template "examples/license-partials/creativeCommonsByNcSa" .}}
 {{- else -}}
-  {{template "examples/license-partials/creativeCommonsBySa"}}
+  {{template "examples/license-partials/creativeCommonsBySa" .}}
 {{- end }}
