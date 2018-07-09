@@ -22,8 +22,9 @@ import (
 	"path/filepath"
 	"text/template"
 
+	"github.com/gobuffalo/packr"
 	"github.com/okkur/reposeed/cmd/reposeed/config"
-	"github.com/okkur/reposeed/cmd/reposeed/templates"
+	templatesBox "github.com/okkur/reposeed/cmd/reposeed/templates"
 	yaml "gopkg.in/yaml.v2"
 )
 
@@ -44,7 +45,22 @@ func parseConfig(path string) config.Config {
 	return conf
 }
 
-func generateFile(config config.Config, fileContent []byte, newPath string, overwrite bool) error {
+func parseTemplates(box packr.Box) *template.Template {
+	templatesName := box.List()
+	templates := &template.Template{}
+	for _, templateName := range templatesName {
+		templateFile, err := box.Open(templateName)
+		if err != nil {
+			log.Fatalf("could not open the template file: %s", templateName)
+		}
+		defer templateFile.Close()
+		templateContent := box.String(templateName)
+		templates.New(templateName).Parse(templateContent)
+	}
+	return templates
+}
+
+func generateFile(config config.Config, templates *template.Template, newPath string, overwrite bool) error {
 	if _, e := os.Stat(newPath); os.IsNotExist(e) {
 		os.MkdirAll(filepath.Dir(newPath), os.ModePerm)
 	}
@@ -61,12 +77,7 @@ func generateFile(config config.Config, fileContent []byte, newPath string, over
 	}
 	defer file.Close()
 
-	temp, err := template.New("template").Parse(string(fileContent))
-	if err != nil {
-		return fmt.Errorf("unable to parse file: %s", err)
-	}
-
-	err = temp.Execute(file, config)
+	err = templates.Lookup(newPath).Execute(file, config)
 	if err != nil {
 		return fmt.Errorf("unable to parse template: %s", err)
 	}
@@ -82,7 +93,7 @@ func main() {
 	flag.BoolVar(&overwrite, "overwrite", false, "Force overwrite files")
 
 	flag.Parse()
-	box := templates.GetTemplates()
+	box := templatesBox.GetTemplates()
 
 	// Commands
 	if os.Args[1] == "init" {
@@ -94,16 +105,15 @@ func main() {
 	}
 
 	config := parseConfig(conf)
-	templatesName := box.List()
 	bl := make(map[string]bool)
 	bl["seed-config.example.yaml"] = true
 	configVersion := config.Reposeed.ConfigVersion
+	templates := parseTemplates(box)
 
 	if configVersion == SupportedConfigVersion {
-		for _, templateName := range templatesName {
+		for _, templateName := range box.List() {
 			file, _ := box.Open(templateName)
 			fileStat, _ := file.Stat()
-			fileContent := box.Bytes(templateName)
 			if bl[fileStat.Name()] {
 				log.Println(filepath.SkipDir)
 				continue
@@ -113,7 +123,7 @@ func main() {
 				continue
 			}
 
-			err := generateFile(config, fileContent, templateName, overwrite)
+			err := generateFile(config, templates, templateName, overwrite)
 			if err != nil {
 				log.Println(err)
 			}
