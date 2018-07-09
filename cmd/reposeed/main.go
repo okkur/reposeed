@@ -23,7 +23,7 @@ import (
 	"text/template"
 
 	"github.com/okkur/reposeed/cmd/reposeed/config"
-	templates "github.com/okkur/reposeed/cmd/reposeed/templates"
+	"github.com/okkur/reposeed/cmd/reposeed/templates"
 	yaml "gopkg.in/yaml.v2"
 )
 
