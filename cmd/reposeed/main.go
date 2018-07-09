@@ -20,6 +20,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 	"text/template"
 
 	"github.com/gobuffalo/packr"
@@ -120,6 +121,10 @@ func main() {
 			}
 
 			if fileStat.IsDir() {
+				continue
+			}
+
+			if strings.Contains(templateName, "partials/") {
 				continue
 			}
 
