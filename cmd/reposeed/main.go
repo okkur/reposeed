@@ -20,10 +20,12 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 	"text/template"
 
+	"github.com/gobuffalo/packr"
 	"github.com/okkur/reposeed/cmd/reposeed/config"
-	templates "github.com/okkur/reposeed/cmd/reposeed/templates"
+	templatesBox "github.com/okkur/reposeed/cmd/reposeed/templates"
 	yaml "gopkg.in/yaml.v2"
 )
 
@@ -44,17 +46,22 @@ func parseConfig(path string) config.Config {
 	return conf
 }
 
-func generateFile(config config.Config, fileContent []byte, newPath string, overwrite bool) error {
+func parseTemplates(box packr.Box) *template.Template {
+	templatesName := box.List()
+	templates := &template.Template{}
+	for _, templateName := range templatesName {
+		templateFile, err := box.Open(templateName)
+		if err != nil {
+			log.Fatalf("could not open the template file: %s", templateName)
+		}
+		defer templateFile.Close()
+		templateContent := box.String(templateName)
+		templates.New(templateName).Parse(templateContent)
+	}
+	return templates
+}
 
-	// Create a temporary file based on fileContent
-	tmpfile, err := ioutil.TempFile("", "template")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer os.Remove(tmpfile.Name())
-	if _, err := tmpfile.Write(fileContent); err != nil {
-		log.Fatal(err)
-	}
+func generateFile(config config.Config, templates *template.Template, newPath string, overwrite bool) error {
 	if _, e := os.Stat(newPath); os.IsNotExist(e) {
 		os.MkdirAll(filepath.Dir(newPath), os.ModePerm)
 	}
@@ -66,22 +73,14 @@ func generateFile(config config.Config, fileContent []byte, newPath string, over
 	}
 
 	file, err := os.Create(newPath)
-	defer file.Close()
 	if err != nil {
 		return fmt.Errorf("unable to create file: %s", err)
 	}
+	defer file.Close()
 
-	temp, err := template.ParseFiles(tmpfile.Name())
-	if err != nil {
-		return fmt.Errorf("unable to parse file: %s", err)
-	}
-
-	err = temp.Execute(file, config)
+	err = templates.Lookup(newPath).Execute(file, config)
 	if err != nil {
 		return fmt.Errorf("unable to parse template: %s", err)
-	}
-	if err := tmpfile.Close(); err != nil {
-		log.Fatal(err)
 	}
 
 	return nil
@@ -95,7 +94,7 @@ func main() {
 	flag.BoolVar(&overwrite, "overwrite", false, "Force overwrite files")
 
 	flag.Parse()
-	box := templates.GetTemplates()
+	box := templatesBox.GetTemplates()
 
 	// Commands
 	if os.Args[1] == "init" {
@@ -107,27 +106,31 @@ func main() {
 	}
 
 	config := parseConfig(conf)
-	templatesName := box.List()
 	bl := make(map[string]bool)
 	bl["seed-config.example.yaml"] = true
 	configVersion := config.Reposeed.ConfigVersion
+	templates := parseTemplates(box)
 
 	if configVersion == SupportedConfigVersion {
-		for _, templateName := range templatesName {
+		for _, templateName := range box.List() {
 			file, _ := box.Open(templateName)
 			fileStat, _ := file.Stat()
-			fileContent := box.Bytes(templateName)
 			if bl[fileStat.Name()] {
 				log.Println(filepath.SkipDir)
+				continue
 			}
 
-			if !fileStat.IsDir() {
-				if !bl[fileStat.Name()] {
-					err := generateFile(config, fileContent, templateName, overwrite)
-					if err != nil {
-						log.Println(err)
-					}
-				}
+			if fileStat.IsDir() {
+				continue
+			}
+
+			if strings.Contains(templateName, "partials/") {
+				continue
+			}
+
+			err := generateFile(config, templates, templateName, overwrite)
+			if err != nil {
+				log.Println(err)
 			}
 		}
 	} else {
