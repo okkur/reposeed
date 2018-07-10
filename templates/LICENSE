@@ -5,15 +5,15 @@
 {{- else if eq .Project.MainLicense "MIT" -}}
   {{template "license-partials/MIT" .}}
 {{- else if eq .Project.MainLicense "CC0" -}}
-  {{template "license-partials/CC0" .}}
+  {{template "license-partials/creativeCommons0" .}}
 {{- else if eq .Project.MainLicense "CCByNc" -}}
-  {{template "license-partials/CCByNc" .}}
+  {{template "license-partials/creativeCommonsByNc" .}}
 {{- else if eq .Project.MainLicense "CCBy" -}}
-  {{template "license-partials/CCBy" .}}
+  {{template "license-partials/creativeCommonsBy" .}}
 {{- else if eq .Project.MainLicense "CCByNcSa" -}}
-  {{template "license-partials/CCByNcSa" .}}
+  {{template "license-partials/creativeCommonsByNcSa" .}}
 {{- else if eq .Project.MainLicense "CCBySa" -}}
-  {{template "license-partials/CCBySa" .}}
+  {{template "license-partials/creativeCommonsBySa" .}}
 {{- else -}}
   {{template "license-partials/ApacheV2" .}}
 {{- end }}
