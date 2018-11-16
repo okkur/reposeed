@@ -5,7 +5,6 @@ go:
   - master
 
 before_install:
-  - export GO111MODULE=on
   - make packr
   - npm install -g alex
 
