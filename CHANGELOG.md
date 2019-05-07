@@ -16,6 +16,26 @@ _2018_
 
 -->
 
+# v0.4.1
+_2019-05-07_
+  - [Downloads for v0.4.1](https://github.com/okkur/reposeed/releases/tag/v0.4.1)
+  - [Changelog since v0.3.0](#changes-since-v040)
+  - [Documentation for v0.4.1](#documentation-for-v041)
+
+## Documentation for v0.4.1
+[Documentation](/docs)
+
+## Changes since v0.4.0
+  - Add BSD-3 license
+  - Add tooling suggestions
+  - Iterate on templates
+  - Add website suggestion
+
+## Fixes since v0.4.0
+  - Replace leftover CLA email
+
+---
+
 # v0.4.0
 _2018-04-06_
   - [Downloads for v0.4.0](https://github.com/okkur/reposeed/releases/tag/v0.4.0)
