@@ -3,7 +3,7 @@ SHELL := /bin/bash
 TARGET := $(shell echo $${PWD\#\#*/})
 .DEFAULT_GOAL: $(TARGET)
 
-VERSION := 1.0.0
+VERSION := 0.4.1
 BUILD := `git rev-parse HEAD`
 
 SRC = $(shell find ./cmd/reposeed -type f -name '*.go' -not -path "./vendor/*")
