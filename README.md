@@ -1,4 +1,4 @@
-<img src='https://github.com/okkur/reposeed/blob/master/media/logo.svg' width='500'/>
+<a href='https://reposeed.okkur.org'><img src='https://github.com/okkur/reposeed/blob/master/media/logo.svg' width='500'/></a>
 
 Extensive repository base files up and running in an instant
 
