@@ -61,16 +61,17 @@ docs:
     Then in case you made any changes on templates, run ```make``` or ```packr install ./cmd/reposeed``` to bundle templates into the generated binary.
 
 emails:
-  commercialSupport: "support@okkur.io"
-  security: "security@okkur.io"
-  coc: "coc@okkur.io"
+  commercialSupport: "support@okkur.org"
+  security: "security@okkur.org"
+  coc: "coc@okkur.org"
 
 copyright:
   owner: "The RepoSeed authors"
   year: "2017"
 
 cla:
-  copyrightHolder: "Michael Grosser"
+  copyrightHolder: "nzt.ventures GmbH"
+  mail: "legal@nzt.ventures"
 
 maintainers:
   - name: "Michael Grosser"

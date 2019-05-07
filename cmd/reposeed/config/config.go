@@ -29,15 +29,16 @@ type Config struct {
 	} `yaml:"copyright" json:"copyright"`
 	Cla struct {
 		CopyrightHolder string `yaml:"copyrightHolder" json:"copyrightHolder"`
+		Mail            string `yaml:"mail" json:"mail"`
 	} `yaml:"cla" json:"cla"`
 	Maintainers []struct {
 		Name string `yaml:"name" json:"name"`
 		Nick string `yaml:"nick,omitempty" json:"nick,omitempty"`
 	} `yaml:"maintainers,omitempty" json:"maintainers,omitempty"`
 	Emails struct {
-		CommercialSupport string `yaml:"commercialSupport,omitempty" json:"commercialSupport,omitempty"`
 		Security          string `yaml:"security" json:"security"`
 		Coc               string `yaml:"coc" json:"coc"`
+		CommercialSupport string `yaml:"commercialSupport,omitempty" json:"commercialSupport,omitempty"`
 	} `yaml:"emails" json:"emails"`
 	Badges []struct {
 		Image string `yaml:"image,omitempty" json:"image,omitempty"`

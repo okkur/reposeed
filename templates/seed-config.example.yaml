@@ -62,6 +62,7 @@ copyright:
 
 cla:
   copyrightHolder: "Tiny Gopher" # required
+  mail: "legal@example.com" #required
 
 maintainers:
   - name: "Huge Gopher"
