@@ -24,9 +24,11 @@ const SupportedConfigVersion = "v1"
 var rootCmd = &cobra.Command{
 	Use:   "reposeed",
 	Short: "Extensive repository base files up and running in an instant",
-	Long: `Start with the base layer necessary to focus on your project and not on the repository.  
+	Long: `
+	Start with the base layer necessary to focus on your project and not on the repository.  
 	Licensing, structure, documentation and more boilerplate to get you started from your first commit.`,
-	Run: RootHandler,
+	Example: "reposeed -c .seed-config.yaml -o ~/myproject",
+	Run:     RootHandler,
 }
 
 func init() {
