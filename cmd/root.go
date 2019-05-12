@@ -10,8 +10,8 @@ import (
 	"text/template"
 
 	"github.com/gobuffalo/packr"
-	"github.com/okkur/reposeed/cmd/reposeed/config"
-	templatesBox "github.com/okkur/reposeed/cmd/reposeed/templates"
+	"github.com/okkur/reposeed/cmd/config"
+	templatesBox "github.com/okkur/reposeed/cmd/templates"
 	"github.com/spf13/cobra"
 	yaml "gopkg.in/yaml.v2"
 )
