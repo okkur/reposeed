@@ -19,8 +19,6 @@ import (
 var outputDir, conf string
 var overwrite bool
 
-const SupportedConfigVersion = "v1"
-
 var rootCmd = &cobra.Command{
 	Use:   "reposeed",
 	Short: "Extensive repository base files up and running in an instant",
