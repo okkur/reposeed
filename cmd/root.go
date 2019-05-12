@@ -7,6 +7,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var outputDir, conf string
+var overwrite bool
+
 var rootCmd = &cobra.Command{
 	Use:   "reposeed",
 	Short: "Extensive repository base files up and running in an instant",
@@ -15,6 +18,12 @@ var rootCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		// TODO: Get the config and generate the files
 	},
+}
+
+func init() {
+	rootCmd.PersistentFlags().StringVarP(&outputDir, "output", "o", "", "Output directory")
+	rootCmd.PersistentFlags().StringVarP(&conf, "conf", "c", ".seed-config.yaml", "Config file")
+	rootCmd.PersistentFlags().BoolVarP(&overwrite, "overwrite", "ow", false, "Force overwrite files")
 }
 
 func Execute() {
