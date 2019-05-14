@@ -2,7 +2,7 @@ project:
   name: "Reposeed"
   oneLiner: "Extensive repository base files up and running in an instant"
   state: "beta"
-  image: "https://github.com/okkur/reposeed/blob/master/media/logo.svg"
+  image: "https://raw.githubusercontent.com/okkur/reposeed/master/media/logo.svg?sanitize=true"
   website: "https://reposeed.okkur.org"
   description: |
     Start with the base layer necessary to focus on your project and not on the repository.  
