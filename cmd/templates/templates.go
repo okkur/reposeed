@@ -18,6 +18,6 @@ import (
 )
 
 func GetTemplates() packr.Box {
-	box := packr.NewBox("../../../templates")
+	box := packr.NewBox("../../templates")
 	return box
 }
