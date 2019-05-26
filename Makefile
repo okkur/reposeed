@@ -3,17 +3,21 @@ SHELL := /bin/bash
 TARGET := $(shell echo $${PWD\#\#*/})
 .DEFAULT_GOAL: $(TARGET)
 
-VERSION := 0.4.1
-BUILD := `git rev-parse HEAD`
+VERSION_FILE = ./VERSION
+VERSION = `cat $(VERSION_FILE)`
+SUFFIX = "-dev"
+CODEPATH = `go list -m`
 
-SRC = $(shell find ./cmd/reposeed -type f -name '*.go' -not -path "./vendor/*")
+SRC = $(shell find . -type f -name '*.go' -not -path "./vendor/*")
+
+export GO111MODULE = on
 
 .PHONY: all build clean install uninstall fmt simplify check run
 
 all: check install
 
 $(TARGET): $(SRC)
-	@packr build -o $(TARGET)
+	packr build -ldflags "-X ${CODEPATH}/cmd.version=${VERSION}${SUFFIX}" -o ${TARGET}
 
 build: $(TARGET)
 	@true
@@ -22,7 +26,7 @@ clean:
 	@rm -f $(TARGET)
 
 install:
-	@packr install ./cmd/reposeed
+	@packr install
 
 uninstall: clean
 	@rm -f $$(which ${TARGET})
@@ -34,9 +38,9 @@ simplify:
 	@gofmt -s -l -w $(SRC)
 
 check:
-	@test -z $(shell gofmt -l ./cmd/reposeed/main.go | tee /dev/stderr) || echo "[WARN] Fix formatting issues with 'make fmt'"
+	@test -z $(shell gofmt -l ./main.go | tee /dev/stderr) || echo "[WARN] Fix formatting issues with 'make fmt'"
 	@for d in $$(go list ./... | grep -v /vendor/); do golint $${d}; done
-	@go tool vet ${SRC}
+	@go vet ${SRC}
 
 packr:
 	@go get -u github.com/gobuffalo/packr/...
