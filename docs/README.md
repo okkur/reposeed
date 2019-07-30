@@ -13,18 +13,18 @@ limitations under the License.
 
 
 ## Development
-Run the following commands to install reposeed and change your directory to reposeed's source code directory.
+Install reposeed and change your directory to reposeed's source code directory.
 ```
-go get -v -u github.com/okkur/reposeed/cmd/reposeed/...
-cd $GOPATH/src/github.com/okkur/reposeed
+go get -u go.okkur.org/reposeed
+cd $GOPATH/src/go.okkur.org/reposeed
 ```
 
-Then run the following command to install **packr**
+Install **packr**.
 ```
 make packr
 ```
 
-Then in case you made any changes on templates, run ```make``` or ```packr install ./cmd/reposeed``` to bundle templates into the generated binary.
+In case you made any changes on templates, run ```make``` to bundle templates into the generated binary.
 # Documentation
 
 No documentation available yet. Start your first contribution with some documentation.
