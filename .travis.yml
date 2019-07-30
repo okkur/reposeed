@@ -6,4 +6,3 @@ go:
 
 before_install:
   - make packr
-
