@@ -6,7 +6,4 @@ go:
 
 before_install:
   - make packr
-  - npm install -g alex
 
-script:
-  - alex --diff
