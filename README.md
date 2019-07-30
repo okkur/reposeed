@@ -1,4 +1,4 @@
-<a href='https://reposeed.okkur.org'><img src='https://raw.githubusercontent.com/resumic/schema/master/media/logo.svg?sanitize=true' width='500'/></a>
+<a href='https://reposeed.okkur.org'><img src='https://raw.githubusercontent.com/okkur/reposeed/master/media/logo.svg?sanitize=true' width='500'/></a>
 
 Extensive repository base files up and running in an instant
 
@@ -11,20 +11,24 @@ Start with the base layer necessary to focus on your project and not on the repo
 Licensing, structure, documentation and more boilerplate to get you started from your first commit.
 
 ## Using Reposeed
+Install reposeed via `go get`.
 ```
-go get -v -u github.com/okkur/reposeed/cmd/reposeed/...
+go get -u go.okkur.org/reposeed
+```
+
+Create the sample .seed-config.yaml file.
+```
 mkdir YOUR-PROJECT
+cd YOUR-PROJECT
+reposeed init
 ```
 
-Run the following command to create the sample .seed-config.yaml file.
+Change .seed-config.yaml to your needs and apply any changes.
 ```
-reposeed init YOUR-PROJECT
+reposeed
 ```
 
-Change .seed-config.yaml to your needs.
-```
-reposeed --conf=YOUR-PROJECT/.seed-config.yaml --output=YOUR-PROJECT
-```
+*Hint: commit any changes you need and stash the rest*
 Take a look at our full [documentation](/docs).
 
 ## Support
