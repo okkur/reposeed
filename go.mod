@@ -1,4 +1,4 @@
-module github.com/okkur/reposeed
+module go.okkur.org/reposeed
 
 require (
 	github.com/gobuffalo/depgen v0.1.1 // indirect
