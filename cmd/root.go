@@ -22,9 +22,9 @@ import (
 	"text/template"
 
 	"github.com/gobuffalo/packr"
-	"github.com/okkur/reposeed/cmd/config"
-	templatesBox "github.com/okkur/reposeed/cmd/templates"
 	"github.com/spf13/cobra"
+	"go.okkur.org/reposeed/cmd/config"
+	templatesBox "go.okkur.org/reposeed/cmd/templates"
 	yaml "gopkg.in/yaml.v2"
 )
 

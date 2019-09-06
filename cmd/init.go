@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	templatesBox "github.com/okkur/reposeed/cmd/templates"
 	"github.com/spf13/cobra"
+	templatesBox "go.okkur.org/reposeed/cmd/templates"
 )
 
 func init() {
