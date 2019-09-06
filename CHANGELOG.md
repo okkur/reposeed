@@ -16,10 +16,26 @@ _2018_
 
 -->
 
+# v0.4.2
+_2019-09-06_
+  - [Downloads for v0.4.2](https://github.com/okkur/reposeed/releases/tag/v0.4.2)
+  - [Changelog since v0.4.1](#changes-since-v041)
+  - [Documentation for v0.4.2](#documentation-for-v042)
+
+## Documentation for v0.4.2
+[Documentation](/docs)
+
+## Changes since v0.4.1
+  - Use vanity url
+
+## Fixes since v0.4.0
+
+---
+
 # v0.4.1
 _2019-05-07_
   - [Downloads for v0.4.1](https://github.com/okkur/reposeed/releases/tag/v0.4.1)
-  - [Changelog since v0.3.0](#changes-since-v040)
+  - [Changelog since v0.4.0](#changes-since-v040)
   - [Documentation for v0.4.1](#documentation-for-v041)
 
 ## Documentation for v0.4.1
