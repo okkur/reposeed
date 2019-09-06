@@ -13,7 +13,7 @@ Licensing, structure, documentation and more boilerplate to get you started from
 ## Using Reposeed
 Install reposeed via `go get`.
 ```
-go get -u go.okkur.org/reposeed
+go get go.okkur.org/reposeed
 ```
 
 Create the sample .seed-config.yaml file.
