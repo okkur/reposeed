@@ -1,1 +1,1 @@
-{{template "docs/LICENSE" .}}
+{{ template "docs/LICENSE" . }}
