@@ -37,6 +37,7 @@ The {{ .Project.Name }} community might be active on various platforms.
 {{- end -}}
 
 {{ "" }}
+{{ if .SupportLinks }}
 ## Documentation
 {{- with .SupportLinks.Documentation }}
   {{ printf "* [User Documentation](%s)" . }}
@@ -44,3 +45,5 @@ The {{ .Project.Name }} community might be active on various platforms.
 {{- with .SupportLinks.Troubleshooting }}
   {{ printf "* [Troubleshooting Guide](%s)" . }}
 {{ end -}}
+
+{{- end }}

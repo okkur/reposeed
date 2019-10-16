@@ -15,6 +15,25 @@ _2018_
 ---
 
 -->
+# v0.4.2
+_2019-10-16_
+  - [Downloads for v0.4.3](https://github.com/okkur/reposeed/releases/tag/v0.4.3)
+  - [Changelog since v0.4.2](#changes-since-v042)
+  - [Documentation for v0.4.3](#documentation-for-v043)
+
+## Documentation for v0.4.3
+[Documentation](/docs)
+
+## Changes since v0.1.0
+  - Docs license choice considered for header example
+  - Add changelog
+
+## Fixes since v0.1.0
+  - New lines
+  - MIT within readme footer #64
+  - MainLicense used within readme
+
+---
 
 # v0.4.2
 _2019-09-06_
@@ -28,7 +47,7 @@ _2019-09-06_
 ## Changes since v0.4.1
   - Use vanity url
 
-## Fixes since v0.4.0
+## Fixes since v0.4.1
 
 ---
 

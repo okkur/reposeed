@@ -7,7 +7,7 @@ project:
   description: |
     Start with the base layer necessary to focus on your project and not on the repository.  
     Licensing, structure, documentation and more boilerplate to get you started from your first commit.
-  version: "v0.4.2"
+  version: "v0.4.3"
 
 vision:
   type: "community"
@@ -82,14 +82,14 @@ maintainers:
     nick: "stp-ip"
 
 repo:
-  link: "https://github.com/okkur/reposeed"
+  link: "https://git.okkur.org/reposeed"
   type: "Github"
 
 badges:
   - image: "https://img.shields.io/badge/state-beta-blue.svg"
     alt: "state"
   - image: "https://img.shields.io/github/release/okkur/reposeed.svg"
-    link: "https://github.com/okkur/reposeed/releases"
+    link: "https://reposeed.okkur.org/releases"
     alt: "release"
   - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
     link: "LICENSE"

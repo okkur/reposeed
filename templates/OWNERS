@@ -1,4 +1,4 @@
-# Current Owners/Maintainers.
+# Current Maintainers
 {{ range .Maintainers -}}
   {{ .Name }} ({{ .Nick }})
 {{ end -}}
