@@ -37,13 +37,12 @@ The {{ .Project.Name }} community might be active on various platforms.
 {{- end -}}
 
 {{ "" }}
-{{ if .SupportLinks }}
+{{- if or .SupportLinks.Documentation .SupportLinks.Troubleshooting }}
 ## Documentation
 {{- with .SupportLinks.Documentation }}
   {{ printf "* [User Documentation](%s)" . }}
-{{ end -}}
+{{- end -}}
 {{- with .SupportLinks.Troubleshooting }}
   {{ printf "* [Troubleshooting Guide](%s)" . }}
-{{ end -}}
-
 {{- end -}}
+{{- end }}
