@@ -32,7 +32,7 @@ readme:
   usageExample: |
     Install reposeed via `go get`.
     ```
-    go get -u go.okkur.org/reposeed
+    go get go.okkur.org/reposeed
     ```
 
     Create the sample .seed-config.yaml file.
