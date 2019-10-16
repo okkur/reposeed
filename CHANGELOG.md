@@ -15,7 +15,7 @@ _2018_
 ---
 
 -->
-# v0.4.2
+# v0.4.3
 _2019-10-16_
   - [Downloads for v0.4.3](https://github.com/okkur/reposeed/releases/tag/v0.4.3)
   - [Changelog since v0.4.2](#changes-since-v042)
