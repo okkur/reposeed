@@ -15,6 +15,23 @@ _2018_
 ---
 
 -->
+
+# v0.4.4
+_2019-10-16_
+  - [Downloads for v0.4.4](https://github.com/okkur/reposeed/releases/tag/v0.4.4)
+  - [Changelog since v0.4.3](#changes-since-v043)
+  - [Documentation for v0.4.4](#documentation-for-v044)
+
+## Documentation for v0.4.4
+[Documentation](/docs)
+
+## Changes since v0.4.3
+
+## Fixes since v0.4.3
+  - Fix templates
+
+---
+
 # v0.4.3
 _2019-10-16_
   - [Downloads for v0.4.3](https://github.com/okkur/reposeed/releases/tag/v0.4.3)
@@ -24,11 +41,11 @@ _2019-10-16_
 ## Documentation for v0.4.3
 [Documentation](/docs)
 
-## Changes since v0.1.0
+## Changes since v0.4.2
   - Docs license choice considered for header example
   - Add changelog
 
-## Fixes since v0.1.0
+## Fixes since v0.4.2
   - New lines
   - MIT within readme footer #64
   - MainLicense used within readme

@@ -46,4 +46,4 @@ The {{ .Project.Name }} community might be active on various platforms.
   {{ printf "* [Troubleshooting Guide](%s)" . }}
 {{ end -}}
 
-{{- end }}
+{{- end -}}

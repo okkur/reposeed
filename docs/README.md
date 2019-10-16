@@ -11,7 +11,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-
 ## Development
 Install reposeed and change your directory to reposeed's source code directory.
 ```

@@ -11,9 +11,9 @@
 {{ .Project.OneLiner }}
 
 {{ range .Badges }}
-  {{ if .Image && .Link }}
+  {{- if or .Image .Link }}
     {{- printf " [![%s](%s)](%s)" .Alt .Image .Link -}}
-  {{ end }}
+  {{ end -}}
 {{ end }}
 
 {{ "" }}
@@ -49,17 +49,17 @@ Best place to start is our [contribution guide](/CONTRIBUTING.md).
 
 ----
 
-{{- if eq .Project.MainLicense "AGPLv3" -}}
+{{ if eq .Project.MainLicense "AGPLv3" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "AGPL License, Version 3.0") }}
-{{- else if eq .Project.MainLicense "GPLv3" -}}
+{{ else if eq .Project.MainLicense "GPLv3" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "GPL License, Version 3.0") }}
-{{- else if eq .Project.MainLicense "BSD3" -}}
+{{ else if eq .Project.MainLicense "BSD3" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "BSD License, Version 3.0") }}
-{{- else if eq .Project.MainLicense "MIT" -}}
+{{ else if eq .Project.MainLicense "MIT" }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "MIT License") }}
-{{- else -}}
+{{ else }}
   {{- printf "*Code is licensed under the [%s](/LICENSE).*  " (print "Apache License, Version 2.0") }}
-{{- end }}
+{{ end -}}
 
 {{ if eq .Project.DocsLicense "apache2" }}
   {{- printf "*Documentation/examples are licensed under [%s](/docs/LICENSE).*  " (print "Apache License, Version 2.0") }}
