@@ -13,6 +13,7 @@ limitations under the License.
 
 package config
 
+// Config holds the reposeed configuration structure
 type Config struct {
 	Project struct {
 		Name        string `yaml:"name" json:"name"`

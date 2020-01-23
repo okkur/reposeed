@@ -17,6 +17,7 @@ import (
 	"github.com/gobuffalo/packr"
 )
 
+// GetTemplates pulls in go templates from packr
 func GetTemplates() packr.Box {
 	box := packr.NewBox("../../templates")
 	return box
