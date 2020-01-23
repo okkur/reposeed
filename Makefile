@@ -39,9 +39,9 @@ simplify:
 
 check:
 	@go get -u golang.org/x/lint/golint
-	@test -z $(shell gofmt -l ./main.go | tee /dev/stderr) || echo "[WARN] Fix formatting issues with 'make fmt'"
+	@test -z $(shell gofmt -l ./ | tee /dev/stderr) || echo "[WARN] Fix formatting issues with 'make fmt'"
 	@for d in $$(go list ./...); do golint $${d}; done
-	@go vet ${SRC}
+	@go vet
 
 packr:
 	@go get -u github.com/gobuffalo/packr/...

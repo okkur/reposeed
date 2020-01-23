@@ -6,6 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// SupportedConfigVersion holds matching configuration version
 const SupportedConfigVersion = "v1"
 
 var version = "dev"

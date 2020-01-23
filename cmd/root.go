@@ -10,6 +10,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+
 package cmd
 
 import (
@@ -47,6 +48,7 @@ func init() {
 	rootCmd.PersistentFlags().BoolVarP(&overwrite, "overwrite", "w", false, "Force overwrite files")
 }
 
+// RootHandler handles main cli entrypoint with cobra
 func RootHandler(cmd *cobra.Command, args []string) {
 	box := templatesBox.GetTemplates()
 
@@ -83,6 +85,7 @@ func RootHandler(cmd *cobra.Command, args []string) {
 	}
 }
 
+// Execute executes a specific command
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
 		log.Printf("Couldn't execute the command: %s", err.Error())
