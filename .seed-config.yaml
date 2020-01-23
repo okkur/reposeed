@@ -7,7 +7,7 @@ project:
   description: |
     Start with the base layer necessary to focus on your project and not on the repository.  
     Licensing, structure, documentation and more boilerplate to get you started from your first commit.
-  version: "v0.4.4"
+  version: "v0.4.5"
   mainLicense: "Apachev2"
   docsLicense: "CCBySa"
 
