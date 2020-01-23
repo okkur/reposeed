@@ -16,6 +16,25 @@ _2018_
 
 -->
 
+# v0.4.5
+_2020-01-23_
+  - [Downloads for v0.4.5](https://github.com/okkur/reposeed/releases/tag/v0.4.5)
+  - [Changelog since v0.4.4](#changes-since-v044)
+  - [Documentation for v0.4.5](#documentation-for-v045)
+
+## Documentation for v0.4.5
+[Documentation](/docs)
+
+## Changes since v0.4.4
+  - Make license choice explicit
+  - Update dependencies
+
+## Fixes since v0.4.4
+  - Fix templates
+  - Fix empty documentation links
+
+---
+
 # v0.4.4
 _2019-10-16_
   - [Downloads for v0.4.4](https://github.com/okkur/reposeed/releases/tag/v0.4.4)
