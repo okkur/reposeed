@@ -1,7 +1,7 @@
 <!--
 # v0.5.0
 _2018_
-  - [Downloads for v0.5.0](https://github.com/okkur/reposeed/releases/tag/v0.5.0)
+  - [Downloads for v0.5.0](https://reposeed.okkur.org/releases/v0.5.0)
   - [Changelog since v0.4.0](#changes-since-v040)
   - [Documentation for v0.5.0](#documentation-for-v050)
 
@@ -18,12 +18,12 @@ _2018_
 
 # v0.4.5
 _2020-01-23_
-  - [Downloads for v0.4.5](https://github.com/okkur/reposeed/releases/tag/v0.4.5)
+  - [Downloads for v0.4.5](https://reposeed.okkur.org/releases/v0.4.5)
   - [Changelog since v0.4.4](#changes-since-v044)
   - [Documentation for v0.4.5](#documentation-for-v045)
 
 ## Documentation for v0.4.5
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.4.4
   - Make license choice explicit
@@ -37,12 +37,12 @@ _2020-01-23_
 
 # v0.4.4
 _2019-10-16_
-  - [Downloads for v0.4.4](https://github.com/okkur/reposeed/releases/tag/v0.4.4)
+  - [Downloads for v0.4.4](https://reposeed.okkur.org/releases/v0.4.4)
   - [Changelog since v0.4.3](#changes-since-v043)
   - [Documentation for v0.4.4](#documentation-for-v044)
 
 ## Documentation for v0.4.4
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.4.3
 
@@ -53,12 +53,12 @@ _2019-10-16_
 
 # v0.4.3
 _2019-10-16_
-  - [Downloads for v0.4.3](https://github.com/okkur/reposeed/releases/tag/v0.4.3)
+  - [Downloads for v0.4.3](https://reposeed.okkur.org/releases/v0.4.3)
   - [Changelog since v0.4.2](#changes-since-v042)
   - [Documentation for v0.4.3](#documentation-for-v043)
 
 ## Documentation for v0.4.3
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.4.2
   - Docs license choice considered for header example
@@ -73,12 +73,12 @@ _2019-10-16_
 
 # v0.4.2
 _2019-09-06_
-  - [Downloads for v0.4.2](https://github.com/okkur/reposeed/releases/tag/v0.4.2)
+  - [Downloads for v0.4.2](https://reposeed.okkur.org/releases/v0.4.2)
   - [Changelog since v0.4.1](#changes-since-v041)
   - [Documentation for v0.4.2](#documentation-for-v042)
 
 ## Documentation for v0.4.2
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.4.1
   - Use vanity url
@@ -89,12 +89,12 @@ _2019-09-06_
 
 # v0.4.1
 _2019-05-07_
-  - [Downloads for v0.4.1](https://github.com/okkur/reposeed/releases/tag/v0.4.1)
+  - [Downloads for v0.4.1](https://reposeed.okkur.org/releases/v0.4.1)
   - [Changelog since v0.4.0](#changes-since-v040)
   - [Documentation for v0.4.1](#documentation-for-v041)
 
 ## Documentation for v0.4.1
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.4.0
   - Add BSD-3 license
@@ -109,12 +109,12 @@ _2019-05-07_
 
 # v0.4.0
 _2018-04-06_
-  - [Downloads for v0.4.0](https://github.com/okkur/reposeed/releases/tag/v0.4.0)
+  - [Downloads for v0.4.0](https://reposeed.okkur.org/releases/v0.4.0)
   - [Changelog since v0.3.0](#changes-since-v030)
   - [Documentation for v0.4.0](#documentation-for-v040)
 
 ## Documentation for v0.4.0
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.3.0
   - `init` subcommand
@@ -129,12 +129,12 @@ _2018-04-06_
 
 # v0.3.0
 _2017-10-28_
-  - [Downloads for v0.3.0](https://github.com/okkur/reposeed/releases/tag/v0.3.0)
+  - [Downloads for v0.3.0](https://reposeed.okkur.org/releases/v0.3.0)
   - [Changelog since v0.2.0](#changes-since-v020)
   - [Documentation for v0.3.0](#documentation-for-v030)
 
 ## Documentation for v0.3.0
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.2.0
   - Possibility to use creative commons license as main license
@@ -149,12 +149,12 @@ _2017-10-28_
 
 # v0.2.0
 _2017-10-12_
-  - [Downloads for v0.2.0](https://github.com/okkur/reposeed/releases/tag/v0.2.0)
+  - [Downloads for v0.2.0](https://reposeed.okkur.org/releases/v0.2.0)
   - [Changelog since v0.1.0](#changes-since-v010)
   - [Documentation for v0.2.0](#documentation-for-v020)
 
 ## Documentation for v0.2.0
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.1.0
   - Example LICENSE
@@ -168,12 +168,12 @@ _2017-10-12_
 
 # v0.1.0
 _2017-10-10_
-  - [Downloads for v0.1.0](https://github.com/okkur/reposeed/releases/tag/v0.1.0)
+  - [Downloads for v0.1.0](https://reposeed.okkur.org/releases/v0.1.0)
   - [Changelog since v0.0.0](#changes-since-v000)
   - [Documentation for v0.1.0](#documentation-for-v010)
 
 ## Documentation for v0.1.0
-[Documentation](/docs)
+[Documentation](https://reposeed.okkur.org/docs)
 
 ## Changes since v0.0.0
   - CLA files

@@ -55,16 +55,16 @@ docs:
   development: |
     Install reposeed and change your directory to reposeed's source code directory.
     ```
-    go get -u go.okkur.org/reposeed
-    cd $GOPATH/src/go.okkur.org/reposeed
+    git clone github.com/okkur/reposeed
+    cd reposeed
     ```
 
-    Install **packr**.
+    Install **packr** and build reposeed via:
     ```
     make packr
     ```
-
     In case you made any changes on templates, run ```make``` to bundle templates into the generated binary.
+
 
 emails:
   commercialSupport: "support@okkur.org"
@@ -91,7 +91,7 @@ badges:
   - image: "https://img.shields.io/badge/state-beta-blue.svg"
     alt: "state"
   - image: "https://img.shields.io/github/release/okkur/reposeed.svg"
-    link: "https://reposeed.okkur.org/releases"
+    link: "https://reposeed.okkur.org/releases/"
     alt: "release"
   - image: "https://img.shields.io/github/license/okkur/reposeed.svg"
     link: "LICENSE"
